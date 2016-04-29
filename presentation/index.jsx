@@ -60,6 +60,57 @@ export default class Presentation extends React.Component {
             <Image src={images.stepOne} margin="0px auto 40px" height="524px"/>
           </Slide>
 
+          <Slide transition={slideTransition} bgColor="primary">
+            <Layout>
+              <Link href="https://babeljs.io/">
+                <Image src={images.babel} />
+              </Link>
+            </Layout>
+          </Slide>
+
+          <Slide transition={slideTransition} bgImage={images.babelTower} bgDarken={0.85}>
+            <List textColor="primary">
+              <Appear><ListItem>ES2015+ and custom features</ListItem></Appear>
+              <Appear><ListItem>Needs polyfills for some</ListItem></Appear>
+              <Appear><ListItem>Presets and plugins</ListItem></Appear>
+              <Appear><ListItem>Be careful with stage 0 features!</ListItem></Appear>
+              <Appear><ListItem>Prefer spelling out the custom features you use</ListItem></Appear>
+            </List>
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <iframe
+              width="100%"
+              height="600px"
+              src="https://babeljs.io/repl/"/>
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <Layout>
+              <Link href="https://webpack.github.io/">
+                <Image src={images.webpack} height="400px" />
+              </Link>
+            </Layout>
+          </Slide>
+
+          <Slide transition={slideTransition} bgImage={images.babelTower} bgDarken={0.85}>
+            <List textColor="primary">
+              <Appear><ListItem>Application as a dependency graph</ListItem></Appear>
+              <Appear><ListItem>Configuration driven</ListItem></Appear>
+              <Appear><ListItem>Powerful but hard to master</ListItem></Appear>
+              <Appear><ListItem>Focus on bundling</ListItem></Appear>
+              <Appear><ListItem><Link href="https://www.npmjs.com/package/webpack-merge">webpack-merge</Link></ListItem></Appear>
+            </List>
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+              <Link href="http://www.webpackbin.com/">
+                <Heading size={1} textColor="tertiary">
+                  WebpackBin
+                </Heading>
+              </Link>
+          </Slide>
+
           <Slide transition={slideTransition} bgColor="white">
             <Heading size={2} textColor="primary">
               React 101 - Basics

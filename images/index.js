@@ -11,5 +11,8 @@ export default _.mapValues({
   stepSeven: require("./step7.png"),
   stepEight: require("./step8.png"),
   stepNine: require("./step9.png"),
-  stepTen: require("./step10.png")
+  stepTen: require("./step10.png"),
+  babel: require("./babel.png"),
+  babelTower: require("./babel.jpg"),
+  webpack: require("./webpack.png")
 }, (v) => v.replace("/", ""));
