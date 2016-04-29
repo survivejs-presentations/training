@@ -53,6 +53,76 @@ export default class Presentation extends React.Component {
             <Image src={images.logo} margin="0px auto 40px" height="524px"/>
           </Slide>
 
+          <Slide transition={slideTransition} bgColor="white">
+            <Heading size={2} textColor="primary">
+              Babel and Webpack 101
+            </Heading>
+            <Image src={images.logo} margin="0px auto 40px" height="524px"/>
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="white">
+            <Heading size={2} textColor="primary">
+              React 101 - Basics
+            </Heading>
+            <Image src={images.logo} margin="0px auto 40px" height="524px"/>
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="white">
+            <Heading size={2} textColor="primary">
+              React 202 - Components
+            </Heading>
+            <Image src={images.logo} margin="0px auto 40px" height="524px"/>
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="white">
+            <Heading size={2} textColor="primary">
+              React 303 - Typing
+            </Heading>
+            <Image src={images.logo} margin="0px auto 40px" height="524px"/>
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="white">
+            <Heading size={2} textColor="primary">
+              React 404 - Data Management
+            </Heading>
+            <Image src={images.logo} margin="0px auto 40px" height="524px"/>
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="white">
+            <Heading size={2} textColor="primary">
+              React 505 - Async
+            </Heading>
+            <Image src={images.logo} margin="0px auto 40px" height="524px"/>
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="white">
+            <Heading size={2} textColor="primary">
+              React 606 - Routing
+            </Heading>
+            <Image src={images.logo} margin="0px auto 40px" height="524px"/>
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="white">
+            <Heading size={2} textColor="primary">
+              React 707 - Performance
+            </Heading>
+            <Image src={images.logo} margin="0px auto 40px" height="524px"/>
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="white">
+            <Heading size={2} textColor="primary">
+              React 808 - Testing
+            </Heading>
+            <Image src={images.logo} margin="0px auto 40px" height="524px"/>
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="white">
+            <Heading size={2} textColor="primary">
+              React 909 - Structuring
+            </Heading>
+            <Image src={images.logo} margin="0px auto 40px" height="524px"/>
+          </Slide>
+
           <Slide transition={slideTransition} bgImage={images.troll} bgDarken={0.85}>
             <Heading caps fit size={1} textColor="tertiary">
               Questions?
