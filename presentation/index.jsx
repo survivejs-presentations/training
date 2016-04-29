@@ -183,11 +183,29 @@ export default class Presentation extends React.Component {
             <Image src={images.stepThree} margin="0px auto 40px" height="524px"/>
           </Slide>
 
+          <Slide transition={slideTransition}>
+            <Heading size={1} textColor="primary">
+              Exercise
+            </Heading>
+            <List>
+              <Appear><ListItem></ListItem></Appear>
+            </List>
+          </Slide>
+
           <Slide transition={slideTransition} bgColor="white">
             <Heading size={2} textColor="primary">
               React 303 - Typing
             </Heading>
             <Image src={images.stepFour} margin="0px auto 40px" height="524px"/>
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Heading size={1} textColor="primary">
+              Exercise
+            </Heading>
+            <List>
+              <Appear><ListItem></ListItem></Appear>
+            </List>
           </Slide>
 
           <Slide transition={slideTransition} bgColor="white">
@@ -197,11 +215,29 @@ export default class Presentation extends React.Component {
             <Image src={images.stepFive} margin="0px auto 40px" height="524px"/>
           </Slide>
 
+          <Slide transition={slideTransition}>
+            <Heading size={1} textColor="primary">
+              Exercise
+            </Heading>
+            <List>
+              <Appear><ListItem></ListItem></Appear>
+            </List>
+          </Slide>
+
           <Slide transition={slideTransition} bgColor="white">
             <Heading size={2} textColor="primary">
               React 505 - Async
             </Heading>
             <Image src={images.stepSix} margin="0px auto 40px" height="524px"/>
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Heading size={1} textColor="primary">
+              Exercise
+            </Heading>
+            <List>
+              <Appear><ListItem></ListItem></Appear>
+            </List>
           </Slide>
 
           <Slide transition={slideTransition} bgColor="white">
@@ -211,11 +247,29 @@ export default class Presentation extends React.Component {
             <Image src={images.stepSeven} margin="0px auto 40px" height="524px"/>
           </Slide>
 
+          <Slide transition={slideTransition}>
+            <Heading size={1} textColor="primary">
+              Exercise
+            </Heading>
+            <List>
+              <Appear><ListItem></ListItem></Appear>
+            </List>
+          </Slide>
+
           <Slide transition={slideTransition} bgColor="white">
             <Heading size={2} textColor="primary">
               React 707 - Performance
             </Heading>
             <Image src={images.stepEight} margin="0px auto 40px" height="524px"/>
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Heading size={1} textColor="primary">
+              Exercise
+            </Heading>
+            <List>
+              <Appear><ListItem></ListItem></Appear>
+            </List>
           </Slide>
 
           <Slide transition={slideTransition} bgColor="white">
@@ -225,11 +279,29 @@ export default class Presentation extends React.Component {
             <Image src={images.stepNine} margin="0px auto 40px" height="524px"/>
           </Slide>
 
+          <Slide transition={slideTransition}>
+            <Heading size={1} textColor="primary">
+              Exercise
+            </Heading>
+            <List>
+              <Appear><ListItem></ListItem></Appear>
+            </List>
+          </Slide>
+
           <Slide transition={slideTransition} bgColor="white">
             <Heading size={2} textColor="primary">
-              React 909 - Structuring
+              React 909 - Structuring Projects
             </Heading>
             <Image src={images.stepTen} margin="0px auto 40px" height="524px"/>
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Heading size={1} textColor="primary">
+              Exercise
+            </Heading>
+            <List>
+              <Appear><ListItem></ListItem></Appear>
+            </List>
           </Slide>
 
           <Slide transition={slideTransition} bgImage={images.troll} bgDarken={0.85}>
