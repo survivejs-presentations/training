@@ -56,6 +56,10 @@ export default class Presentation extends React.Component {
             <Image src={images.stepZero} margin="0px auto 40px" height="524px"/>
           </Slide>
 
+          <Slide transition={slideTransition} bgColor="black" notes="">
+            <Image src={images.kanban} margin="0px auto 40px" height="279px"/>
+          </Slide>
+
           <Slide transition={slideTransition} bgColor="white">
             <Heading size={2} textColor="primary">
               Babel and Webpack 101

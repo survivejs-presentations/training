@@ -38,16 +38,20 @@ module.exports = {
       loaders: ["style", "raw"],
       include: __dirname
     }, {
+      test: /\.gif$/,
+      loader: "url?limit=10000&mimetype=image/svg+xml",
+      include: PATHS.images
+    }, {
       test: /\.svg$/,
       loader: "url?limit=10000&mimetype=image/svg+xml",
       include: PATHS.images
     }, {
       test: /\.png$/,
-      loader: "url-loader?mimetype=image/png",
+      loader: "url-loader?limit=10000mimetype=image/png",
       include: PATHS.images
     }, {
       test: /\.jpg$/,
-      loader: "url-loader?mimetype=image/jpg",
+      loader: "url-loader?limit=10000mimetype=image/jpg",
       include: PATHS.images
     }]
   }
