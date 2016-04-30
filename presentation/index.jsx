@@ -111,7 +111,7 @@ export default class Presentation extends React.Component {
               Application Graph
             </Heading>
             <Link href="https://chrisbateman.github.io/webpack-visualizer/">
-              <Image src={images.webpackGraph} height="524px" />
+              <Image src={images.webpackGraph} margin="40px auto" height="324px" />
             </Link>
           </Slide>
 
@@ -163,7 +163,7 @@ export default class Presentation extends React.Component {
             <Heading size={2}>
               Virtual DOM
             </Heading>
-            <Image src={images.vdom} height="524px" />
+            <Image src={images.vdom} margin="40px auto" height="324px" />
           </Slide>
 
           <Slide transition={slideTransition} bgColor="primary">
@@ -266,6 +266,13 @@ export default class Presentation extends React.Component {
               source={require("raw!../examples/component_09.jsx")}
               margin="20px auto"
             />
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <Heading size={2}>
+              Lifecycle Methods
+            </Heading>
+            <Image src={images.lifecycle} margin="40px auto" height="324px" />
           </Slide>
 
           <Slide transition={slideTransition}>
