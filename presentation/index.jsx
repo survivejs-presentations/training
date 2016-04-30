@@ -92,8 +92,8 @@ export default class Presentation extends React.Component {
             </Link>
           </Slide>
 
-          <Slide transition={slideTransition} bgImage={images.babelTower} bgDarken={0.85}>
-            <List textColor="primary">
+          <Slide transition={slideTransition}>
+            <List>
               <Appear><ListItem>Application as a dependency graph</ListItem></Appear>
               <Appear><ListItem>Configuration driven</ListItem></Appear>
               <Appear><ListItem>Powerful but hard to master</ListItem></Appear>
