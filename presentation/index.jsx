@@ -107,6 +107,15 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition} bgColor="primary">
+            <Heading size={2}>
+              Application Graph
+            </Heading>
+            <Link href="https://chrisbateman.github.io/webpack-visualizer/">
+              <Image src={images.webpackGraph} height="524px" />
+            </Link>
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
             <Link href="http://www.webpackbin.com/">
               <Heading size={1} textColor="tertiary">
                 WebpackBin
@@ -154,7 +163,7 @@ export default class Presentation extends React.Component {
             <Heading size={2}>
               Virtual DOM
             </Heading>
-            <Image src={images.vdom} margin="0px auto 40px" height="524px" />
+            <Image src={images.vdom} height="524px" />
           </Slide>
 
           <Slide transition={slideTransition} bgColor="primary">

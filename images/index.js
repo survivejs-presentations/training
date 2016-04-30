@@ -17,5 +17,6 @@ export default _.mapValues({
   webpack: require("./webpack.png"),
   react: require("./react.png"),
   vdom: require("./vdom.png"),
-  kanban: require("./kanban.gif")
+  kanban: require("./kanban.gif"),
+  webpackGraph: require("./webpack_graph.png")
 }, (v) => v.replace("/", ""));
