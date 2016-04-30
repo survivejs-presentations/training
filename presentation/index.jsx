@@ -367,9 +367,37 @@ export default class Presentation extends React.Component {
 
           <Slide transition={slideTransition} bgColor="white">
             <Heading size={2} textColor="primary">
-              React 404 - Data Management
+              React 404 - State Management
             </Heading>
             <Image src={images.stepFive} margin="0px auto 40px" height="524px"/>
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Heading size={1}>
+              The Problem of State
+            </Heading>
+            <List>
+              <Appear><ListItem>Application state, UI state</ListItem></Appear>
+              <Appear><ListItem>Where to push it?</ListItem></Appear>
+              <Appear><ListItem>How to manipulate it?</ListItem></Appear>
+              <Appear><ListItem>How to propagate changes to the UI?</ListItem></Appear>
+            </List>
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Heading size={1}>
+              Solutions
+            </Heading>
+            <List>
+              <Appear><ListItem>Keep it all in React components (App?)</ListItem></Appear>
+              <Appear><ListItem><Link href="https://facebook.github.io/flux/">Flux</Link> - actions, stores, dispatcher</ListItem></Appear>
+              <Appear><ListItem><Link href="http://redux.js.org/">Redux</Link> - Flux taken to bare minimum</ListItem></Appear>
+              <Appear><ListItem><Link href="https://mobxjs.github.io/mobx/">MobX</Link> - Observables, think spreadsheets</ListItem></Appear>
+            </List>
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <Image src={images.flux} margin="40px auto" height="324px" />
           </Slide>
 
           <Slide transition={slideTransition}>
