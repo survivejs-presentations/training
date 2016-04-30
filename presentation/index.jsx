@@ -124,8 +124,8 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition}>
-            <Heading size={1} textColor="primary">
-              Exercise
+            <Heading size={1}>
+              Exercises
             </Heading>
             <List>
               <Appear><ListItem>Set up a bin based on the React boilerplate</ListItem></Appear>
@@ -179,8 +179,8 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition}>
-            <Heading size={1} textColor="primary">
-              Exercise
+            <Heading size={1}>
+              Exercises
             </Heading>
             <List>
               <Appear><ListItem>Add state to your application constructor (this.state = ...). Remember to bind!</ListItem></Appear>
@@ -276,8 +276,8 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition}>
-            <Heading size={1} textColor="primary">
-              Exercise
+            <Heading size={1}>
+              Exercises
             </Heading>
             <List>
               <Appear><ListItem>Extract Notes component from App</ListItem></Appear>
@@ -295,11 +295,73 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition}>
-            <Heading size={1} textColor="primary">
-              Exercise
+            <Heading size={1}>
+              propTypes and defaultProps
             </Heading>
             <List>
-              <Appear><ListItem></ListItem></Appear>
+              <Appear><ListItem>Flexibility vs. robustness</ListItem></Appear>
+              <Appear><ListItem>Document expectations</ListItem></Appear>
+              <Appear><ListItem>Catch issues during development</ListItem></Appear>
+            </List>
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <CodePane
+              lang="jsx"
+              source={require("raw!../examples/proptypes_01.jsx")}
+              margin="20px auto"
+            />
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <CodePane
+              lang="jsx"
+              source={require("raw!../examples/proptypes_02.jsx")}
+              margin="20px auto"
+            />
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Heading size={1}>
+              <Link href="http://flowtype.org/">Flow</Link>
+            </Heading>
+            <List>
+              <Appear><ListItem>Gradual typing through static analysis</ListItem></Appear>
+              <Appear><ListItem>Might replace propTypes over longer term</ListItem></Appear>
+              <Appear><ListItem>Runtime checks with <Link href="https://www.npmjs.com/package/babel-plugin-typecheck">babel-plugin-typecheck</Link></ListItem></Appear>
+              <Appear><ListItem>No support for function style components yet <Link href="https://github.com/facebook/flow/issues/1081">#1081</Link></ListItem></Appear>
+            </List>
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <CodePane
+              lang="jsx"
+              source={require("raw!../examples/flow_01.jsx")}
+              margin="20px auto"
+            />
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Heading size={1}>
+              TypeScript
+            </Heading>
+            <List>
+              <Appear><ListItem>Established alternative</ListItem></Appear>
+              <Appear><ListItem>Strong IDE integration</ListItem></Appear>
+              <Appear><ListItem>Hard to introduce piece-meal (all in)</ListItem></Appear>
+              <Appear><ListItem>Stronger ecosystem (more users, type definitions)</ListItem></Appear>
+              <Appear><ListItem>See <Link href="https://www.reddit.com/r/javascript/comments/39cere/typescript_vs_flow_results_from_our_investigation/">Reddit</Link> for further comparison</ListItem></Appear>
+            </List>
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Heading size={1}>
+              Exercises
+            </Heading>
+            <List>
+              <Appear><ListItem>Annotate Notes with propTypes</ListItem></Appear>
+              <Appear><ListItem>Look up React.PropTypes.shape and see how it works</ListItem></Appear>
+              <Appear><ListItem>*Test <Link href="http://tryflow.org/">tryflow.org</Link></ListItem></Appear>
             </List>
           </Slide>
 
@@ -312,7 +374,7 @@ export default class Presentation extends React.Component {
 
           <Slide transition={slideTransition}>
             <Heading size={1} textColor="primary">
-              Exercise
+              Exercises
             </Heading>
             <List>
               <Appear><ListItem></ListItem></Appear>
@@ -328,7 +390,7 @@ export default class Presentation extends React.Component {
 
           <Slide transition={slideTransition}>
             <Heading size={1} textColor="primary">
-              Exercise
+              Exercises
             </Heading>
             <List>
               <Appear><ListItem></ListItem></Appear>
@@ -344,7 +406,7 @@ export default class Presentation extends React.Component {
 
           <Slide transition={slideTransition}>
             <Heading size={1} textColor="primary">
-              Exercise
+              Exercises
             </Heading>
             <List>
               <Appear><ListItem></ListItem></Appear>
@@ -360,7 +422,7 @@ export default class Presentation extends React.Component {
 
           <Slide transition={slideTransition}>
             <Heading size={1} textColor="primary">
-              Exercise
+              Exercises
             </Heading>
             <List>
               <Appear><ListItem></ListItem></Appear>
@@ -376,7 +438,7 @@ export default class Presentation extends React.Component {
 
           <Slide transition={slideTransition}>
             <Heading size={1} textColor="primary">
-              Exercise
+              Exercises
             </Heading>
             <List>
               <Appear><ListItem></ListItem></Appear>
@@ -392,7 +454,7 @@ export default class Presentation extends React.Component {
 
           <Slide transition={slideTransition}>
             <Heading size={1} textColor="primary">
-              Exercise
+              Exercises
             </Heading>
             <List>
               <Appear><ListItem></ListItem></Appear>
