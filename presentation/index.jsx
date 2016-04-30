@@ -273,7 +273,10 @@ export default class Presentation extends React.Component {
               Exercise
             </Heading>
             <List>
-              <Appear><ListItem></ListItem></Appear>
+              <Appear><ListItem>Extract Notes component from App</ListItem></Appear>
+              <Appear><ListItem>Implement a callback (onClick) to capture when a Note is clicked</ListItem></Appear>
+              <Appear><ListItem>Wire the callback to App (hint: add props to Notes and Note)</ListItem></Appear>
+              <Appear><ListItem>Pass Note id to the callback so we can tell them apart (hint: bind at Notes)</ListItem></Appear>
             </List>
           </Slide>
 
