@@ -196,6 +196,78 @@ export default class Presentation extends React.Component {
             <Image src={images.stepThree} margin="0px auto 40px" height="524px"/>
           </Slide>
 
+          <Slide transition={slideTransition} bgColor="primary">
+            <CodePane
+              lang="jsx"
+              source={require("raw!../examples/component_01.jsx")}
+              margin="20px auto"
+            />
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <CodePane
+              lang="jsx"
+              source={require("raw!../examples/component_02.jsx")}
+              margin="20px auto"
+            />
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <CodePane
+              lang="jsx"
+              source={require("raw!../examples/component_03.jsx")}
+              margin="20px auto"
+            />
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <CodePane
+              lang="jsx"
+              source={require("raw!../examples/component_04.jsx")}
+              margin="20px auto"
+            />
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <CodePane
+              lang="jsx"
+              source={require("raw!../examples/component_05.jsx")}
+              margin="20px auto"
+            />
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <CodePane
+              lang="jsx"
+              source={require("raw!../examples/component_06.jsx")}
+              margin="20px auto"
+            />
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <CodePane
+              lang="jsx"
+              source={require("raw!../examples/component_07.jsx")}
+              margin="20px auto"
+            />
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <CodePane
+              lang="jsx"
+              source={require("raw!../examples/component_08.jsx")}
+              margin="20px auto"
+            />
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <CodePane
+              lang="jsx"
+              source={require("raw!../examples/component_09.jsx")}
+              margin="20px auto"
+            />
+          </Slide>
+
           <Slide transition={slideTransition}>
             <Heading size={1} textColor="primary">
               Exercise

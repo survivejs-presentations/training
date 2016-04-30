@@ -3,7 +3,12 @@ const path = require("path");
 const webpack = require("webpack");
 
 const PATHS = {
-  images: path.join(__dirname, 'images')
+  images: path.join(__dirname, 'images'),
+  presentation: [
+    path.join(__dirname, 'index.js'),
+    path.join(__dirname, 'images', 'index.js'),
+    path.join(__dirname, 'presentation')
+  ]
 };
 
 module.exports = {
@@ -31,8 +36,8 @@ module.exports = {
       loader: "html-loader!markdown-loader?gfm=false"
     }, {
       test: /\.(js|jsx)$/,
-      exclude: /node_modules/,
-      loader: "babel-loader"
+      loader: "babel-loader",
+      include: PATHS.presentation
     }, {
       test: /\.css$/,
       loaders: ["style", "raw"],
