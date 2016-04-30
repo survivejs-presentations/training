@@ -16,5 +16,7 @@ export default _.mapValues({
   babelTower: require("./babel.jpg"),
   webpack: require("./webpack.png"),
   react: require("./react.png"),
-  vdom: require("./vdom.png")
+  vdom: require("./vdom.png"),
+  kanban: require("./kanban.gif"),
+  webpackGraph: require("./webpack_graph.png")
 }, (v) => v.replace("/", ""));
