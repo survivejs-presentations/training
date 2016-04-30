@@ -14,7 +14,7 @@ module.exports = {
     publicPath: "/dist/"
   },
   resolve: {
-    extensions: ["", ".js", ".jsx"]
+    extensions: ["", ".jsx", ".js"]
   },
   plugins: [
     new webpack.optimize.OccurenceOrderPlugin(),
