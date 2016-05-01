@@ -1,14 +1,12 @@
+import ReactDOM from 'react-dom';
 import React from 'react';
-import {connect} from 'react-redux';
-import {editNote} from '../actions/notes';
+import {Provider} from 'react-redux';
 
-@connect(state => (({notes}) => {
-  notes
-}), {
-  editNote
-})
-class Notes extends React.Component {
-  ... // props.notes, props.editNote
-}
+...
 
-export default Notes;
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>,
+  document.getElementById('app')
+);

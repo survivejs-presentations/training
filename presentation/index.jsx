@@ -490,7 +490,7 @@ export default class Presentation extends React.Component {
 
           <Slide transition={slideTransition} bgColor="primary">
             <Heading size={3}>
-              Connecting Using <Link href="https://www.npmjs.com/package/react-redux">react-redux 1/2</Link>
+              Connecting Using <Link href="https://www.npmjs.com/package/react-redux">react-redux</Link> 1/3
             </Heading>
             <CodePane
               lang="jsx"
@@ -501,11 +501,22 @@ export default class Presentation extends React.Component {
 
           <Slide transition={slideTransition} bgColor="primary">
             <Heading size={3}>
-              Connecting Using <Link href="https://www.npmjs.com/package/react-redux">react-redux 2/2</Link>
+              Connecting Using <Link href="https://www.npmjs.com/package/react-redux">react-redux</Link> 2/3
             </Heading>
             <CodePane
               lang="jsx"
               source={require("raw!../examples/redux_04.jsx")}
+              margin="20px auto"
+            />
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <Heading size={3}>
+              Connecting Using <Link href="https://www.npmjs.com/package/react-redux">react-redux</Link> 3/3
+            </Heading>
+            <CodePane
+              lang="jsx"
+              source={require("raw!../examples/redux_05.jsx")}
               margin="20px auto"
             />
           </Slide>
