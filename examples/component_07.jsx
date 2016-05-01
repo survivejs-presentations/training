@@ -7,22 +7,15 @@ export default class App extends React.Component {
     super(props);
 
     this.state = {
-      notes: [
-        {
-          id: uuid(),
-          task: 'Learn React'
-        }
-      ]
+      notes: [ { id: uuid(), task: 'Learn React' } ]
     };
   }
   render() {
-    const notes = this.state.notes;
-
     return (
       <div>
         <button onClick={this.addNote}>+</button>
 
-        <ul>{notes.map(note =>
+        <ul>{this.state.notes.map(note =>
           <li><Note key={note.id} task={note.task} /></li>
         )}</ul>
       </div>
