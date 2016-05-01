@@ -2,17 +2,13 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {editNote} from '../actions/notes';
 
-export default connect({
+@connect(state => ({
   notes: state.notes
 }), {
   editNote
-})(Notes);
+})
+class Notes extends React.Component {
+  ... // props.notes, props.editNote
+}
 
-// Stateless functions
-const Note = connect({
-  notes: state.notes
-}), {
-  editNote
-})(
-  ({task, ...props}) => <div {...props}>{task}</div>
-);
+export default Notes;

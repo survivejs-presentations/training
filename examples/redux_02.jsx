@@ -1,14 +1,20 @@
-import React from 'react';
-import {connect} from 'react-redux';
-import {editNote} from '../actions/notes';
+import {createStore} from 'redux';
 
-@connect(state => ({
-  notes: state.notes
-}), {
-  editNote
-})
-class Notes extends React.Component {
-  ... // props.notes, props.editNote
+// Action types
+const noteTypes = {'CREATE_NOTE': 'CREATE_NOTE'};
+
+// Reducer
+function noteReducer(state=[], action) {
+  ...
 }
 
-export default Notes;
+// Action creator
+function createNote(text) {
+  ...
+}
+
+const store = createStore(noteReducer);
+
+store.subscribe(state => console.log(store.getState()));
+
+store.dispatch(createNote('demo'));

@@ -461,6 +461,17 @@ export default class Presentation extends React.Component {
 
           <Slide transition={slideTransition} bgColor="primary">
             <Heading size={3}>
+              <Link href="http://redux.js.org/">Redux</Link> with Store
+            </Heading>
+            <CodePane
+              lang="jsx"
+              source={require("raw!../examples/redux_02.jsx")}
+              margin="20px auto"
+            />
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <Heading size={3}>
               Minimal <Link href="https://mobxjs.github.io/mobx/">MobX</Link>
             </Heading>
             <CodePane
@@ -483,7 +494,7 @@ export default class Presentation extends React.Component {
             </Heading>
             <CodePane
               lang="jsx"
-              source={require("raw!../examples/redux_02.jsx")}
+              source={require("raw!../examples/redux_03.jsx")}
               margin="20px auto"
             />
           </Slide>
@@ -494,7 +505,7 @@ export default class Presentation extends React.Component {
             </Heading>
             <CodePane
               lang="jsx"
-              source={require("raw!../examples/redux_03.jsx")}
+              source={require("raw!../examples/redux_04.jsx")}
               margin="20px auto"
             />
           </Slide>
