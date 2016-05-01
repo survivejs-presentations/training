@@ -522,7 +522,7 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition}>
-            <Heading size={1} textColor="primary">
+            <Heading size={1}>
               Exercises
             </Heading>
             <List>
@@ -538,7 +538,7 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition}>
-            <Heading size={1} textColor="primary">
+            <Heading size={1}>
               Exercises
             </Heading>
             <List>
@@ -554,7 +554,7 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition}>
-            <Heading size={1} textColor="primary">
+            <Heading size={1}>
               Exercises
             </Heading>
             <List>
@@ -570,7 +570,7 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition}>
-            <Heading size={1} textColor="primary">
+            <Heading size={1}>
               Exercises
             </Heading>
             <List>
@@ -586,7 +586,7 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition}>
-            <Heading size={1} textColor="primary">
+            <Heading size={1}>
               Exercises
             </Heading>
             <List>
@@ -602,7 +602,7 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition}>
-            <Heading size={1} textColor="primary">
+            <Heading size={1}>
               Exercises
             </Heading>
             <List>
