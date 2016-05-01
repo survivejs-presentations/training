@@ -448,6 +448,17 @@ export default class Presentation extends React.Component {
             <Image src={images.flux} margin="40px auto" height="324px" />
           </Slide>
 
+          <Slide transition={slideTransition} bgColor="primary">
+            <Heading size={3}>
+              Minimal Redux
+            </Heading>
+            <CodePane
+              lang="jsx"
+              source={require("raw!../examples/redux_01.jsx")}
+              margin="20px auto"
+            />
+          </Slide>
+
           <Slide transition={slideTransition}>
             <Heading size={1} textColor="primary">
               Exercises
