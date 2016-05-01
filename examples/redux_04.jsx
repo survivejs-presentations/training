@@ -2,15 +2,15 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {editNote} from '../actions/notes';
 
-export default connect({
-  notes: state.notes
+export default connect(({notes}) => {
+  notes
 }), {
   editNote
 })(Notes);
 
 // Stateless functions
-const Note = connect({
-  notes: state.notes
+const Note = connect(({notes}) => {
+  notes
 }), {
   editNote
 })(

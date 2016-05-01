@@ -438,7 +438,7 @@ export default class Presentation extends React.Component {
             </Heading>
             <List>
               <Appear><ListItem>Keep it all in React components (App?)</ListItem></Appear>
-              <Appear><ListItem><Link href="https://facebook.github.io/flux/">Flux</Link> - actions, stores, dispatcher</ListItem></Appear>
+              <Appear><ListItem><Link href="https://facebook.github.io/flux/">Flux</Link> - Actions, stores, dispatcher</ListItem></Appear>
               <Appear><ListItem><Link href="http://redux.js.org/">Redux</Link> - Flux taken to bare minimum</ListItem></Appear>
               <Appear><ListItem><Link href="https://mobxjs.github.io/mobx/">MobX</Link> - Observables, think spreadsheets</ListItem></Appear>
             </List>

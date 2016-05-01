@@ -2,8 +2,8 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {editNote} from '../actions/notes';
 
-@connect(state => ({
-  notes: state.notes
+@connect(state => (({notes}) => {
+  notes
 }), {
   editNote
 })
