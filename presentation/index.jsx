@@ -195,8 +195,8 @@ export default class Presentation extends React.Component {
               Exercises
             </Heading>
             <List>
-              <Appear><ListItem>Add state to your application constructor (this.state = ...). Remember to bind!</ListItem></Appear>
-              <Appear><ListItem>Add a button and alter the count onClick through setState. Why is setState needed?</ListItem></Appear>
+              <Appear><ListItem>Add state to your application constructor (<i>this.state = ...</i>). Remember to <i>bind</i>.</ListItem></Appear>
+              <Appear><ListItem>Add a button and alter the count <i>onClick</i> through <i>setState</i>. Why is <i>setState</i> needed?</ListItem></Appear>
               <Appear><ListItem>*Add a custom button for resetting the state and attach logic</ListItem></Appear>
             </List>
           </Slide>
@@ -319,10 +319,10 @@ export default class Presentation extends React.Component {
               Exercises
             </Heading>
             <List>
-              <Appear><ListItem>Extract Notes component from App</ListItem></Appear>
-              <Appear><ListItem>Implement a callback (onClick) to capture when a Note is clicked</ListItem></Appear>
-              <Appear><ListItem>Wire the callback to App (hint: add props to Notes and Note)</ListItem></Appear>
-              <Appear><ListItem>Pass Note id to the callback so we can tell them apart (hint: bind at Notes)</ListItem></Appear>
+              <Appear><ListItem>Extract a <b>Notes</b> component from App</ListItem></Appear>
+              <Appear><ListItem>Implement a callback (<i>onClick</i>) to capture when a <b>Note</b> is clicked</ListItem></Appear>
+              <Appear><ListItem>Wire the callback to <b>App</b> (hint: add <i>props</i> to <b>Notes</b> and <b>Note</b>)</ListItem></Appear>
+              <Appear><ListItem>Pass <b>Note</b> id to the callback so we can tell them apart (hint: <i>bind</i> at <b>Notes</b>)</ListItem></Appear>
             </List>
           </Slide>
 
@@ -407,8 +407,8 @@ export default class Presentation extends React.Component {
               Exercises
             </Heading>
             <List>
-              <Appear><ListItem>Annotate Notes with propTypes</ListItem></Appear>
-              <Appear><ListItem>Look up React.PropTypes.shape and see how it works</ListItem></Appear>
+              <Appear><ListItem>Annotate <b>Notes</b> with <i>propTypes</i></ListItem></Appear>
+              <Appear><ListItem>Look up <i>React.PropTypes.shape</i> and see how it works</ListItem></Appear>
               <Appear><ListItem>*Test <Link href="http://tryflow.org/">tryflow.org</Link></ListItem></Appear>
             </List>
           </Slide>
@@ -437,7 +437,7 @@ export default class Presentation extends React.Component {
               Solutions
             </Heading>
             <List>
-              <Appear><ListItem>Keep it all in React components (App?)</ListItem></Appear>
+              <Appear><ListItem>Keep it all in React components (<b>App</b>?)</ListItem></Appear>
               <Appear><ListItem><Link href="https://facebook.github.io/flux/">Flux</Link> - Actions, stores, dispatcher</ListItem></Appear>
               <Appear><ListItem><Link href="http://redux.js.org/">Redux</Link> - Flux taken to bare minimum</ListItem></Appear>
               <Appear><ListItem><Link href="https://mobxjs.github.io/mobx/">MobX</Link> - Observables, think spreadsheets</ListItem></Appear>
@@ -526,8 +526,8 @@ export default class Presentation extends React.Component {
               Exercises
             </Heading>
             <List>
-              <Appear><ListItem>Push application state (notes) to Redux</ListItem></Appear>
-              <Appear><ListItem>*Add another data concept (lanes)</ListItem></Appear>
+              <Appear><ListItem>Push application <i>state</i> (notes) to Redux</ListItem></Appear>
+              <Appear><ListItem>*Add another data concept (<b>Lane</b>)</ListItem></Appear>
               <Appear><ListItem>**Implement a MobX variant</ListItem></Appear>
             </List>
           </Slide>
@@ -583,7 +583,7 @@ export default class Presentation extends React.Component {
               Exercises
             </Heading>
             <List>
-              <Appear><ListItem>Set Up a Mock Response at <Link href="http://www.mocky.io/">mocky.io</Link>. <b>Important!</b> Set Access-Control-Allow-Origin to http://sandbox.webpackbin.com.</ListItem></Appear>
+              <Appear><ListItem>Set Up a Mock Response at <Link href="http://www.mocky.io/">mocky.io</Link>. <b>Important!</b> Set <i>Access-Control-Allow-Origin</i> to <i>http://sandbox.webpackbin.com</i>.</ListItem></Appear>
               <Appear><ListItem>Configure <Link href="https://www.npmjs.com/package/redux-thunk">redux-thunk</Link> and perform a query against the resource</ListItem></Appear>
               <Appear><ListItem>*Implement a <Link href="https://www.npmjs.com/package/mobx">MobX</Link> variant</ListItem></Appear>
               <Appear><ListItem>**Implement a <Link href="https://www.npmjs.com/package/redux-saga">redux-saga</Link> variant</ListItem></Appear>
