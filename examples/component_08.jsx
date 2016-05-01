@@ -7,8 +7,6 @@ export default class App extends React.Component {
     this.addNote = this.addNote.bind(this);
   }
   render() {
-    const notes = this.state.notes;
-
     return (
       ...
     );
