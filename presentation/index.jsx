@@ -470,6 +470,46 @@ export default class Presentation extends React.Component {
             />
           </Slide>
 
+          <Slide transition={slideTransition} bgColor="primary">
+            <Heading size={2}>
+              Connecting Data
+            </Heading>
+            <Image src={images.vdom} margin="40px auto" height="324px" />
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <Heading size={3}>
+              Connecting Using <Link href="https://www.npmjs.com/package/react-redux">react-redux</Link>
+            </Heading>
+            <CodePane
+              lang="jsx"
+              source={require("raw!../examples/redux_02.jsx")}
+              margin="20px auto"
+            />
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <Heading size={3}>
+              Connecting Using <Link href="https://www.npmjs.com/package/react-redux">react-redux Continued</Link>
+            </Heading>
+            <CodePane
+              lang="jsx"
+              source={require("raw!../examples/redux_03.jsx")}
+              margin="20px auto"
+            />
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <Heading size={3}>
+              Connecting Using <Link href="https://www.npmjs.com/package/mobx-react">mobx-react</Link>
+            </Heading>
+            <CodePane
+              lang="jsx"
+              source={require("raw!../examples/mobx_02.jsx")}
+              margin="20px auto"
+            />
+          </Slide>
+
           <Slide transition={slideTransition}>
             <Heading size={1} textColor="primary">
               Exercises
