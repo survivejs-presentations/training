@@ -490,7 +490,7 @@ export default class Presentation extends React.Component {
 
           <Slide transition={slideTransition} bgColor="primary">
             <Heading size={3}>
-              Connecting Using <Link href="https://www.npmjs.com/package/react-redux">react-redux</Link>
+              Connecting Using <Link href="https://www.npmjs.com/package/react-redux">react-redux 1/2</Link>
             </Heading>
             <CodePane
               lang="jsx"
@@ -501,7 +501,7 @@ export default class Presentation extends React.Component {
 
           <Slide transition={slideTransition} bgColor="primary">
             <Heading size={3}>
-              Connecting Using <Link href="https://www.npmjs.com/package/react-redux">react-redux Continued</Link>
+              Connecting Using <Link href="https://www.npmjs.com/package/react-redux">react-redux 2/2</Link>
             </Heading>
             <CodePane
               lang="jsx"
@@ -528,7 +528,7 @@ export default class Presentation extends React.Component {
             <List>
               <Appear><ListItem>Push application state (notes) to Redux</ListItem></Appear>
               <Appear><ListItem>*Add another data concept (lanes)</ListItem></Appear>
-              <Appear><ListItem>*Implement a MobX variant</ListItem></Appear>
+              <Appear><ListItem>**Implement a MobX variant</ListItem></Appear>
             </List>
           </Slide>
 
@@ -539,12 +539,54 @@ export default class Presentation extends React.Component {
             <Image src={images.stepSix} margin="0px auto 40px" height="524px"/>
           </Slide>
 
+          <Slide transition={slideTransition} bgColor="primary">
+            <Heading size={3}>
+              Async with <Link href="https://www.npmjs.com/package/redux-thunk">redux-thunk</Link> 1/2
+            </Heading>
+            <CodePane
+              lang="jsx"
+              source={require("raw!../examples/redux_async_01.jsx")}
+              margin="20px auto"
+            />
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <Heading size={3}>
+              Async with <Link href="https://www.npmjs.com/package/redux-thunk">redux-thunk</Link> 2/2
+            </Heading>
+            <CodePane
+              lang="jsx"
+              source={require("raw!../examples/redux_async_02.jsx")}
+              margin="20px auto"
+            />
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Heading size={2}>
+              <Link href="https://www.npmjs.com/package/redux-saga">redux-saga</Link>
+            </Heading>
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <Heading size={3}>
+              Async with <Link href="https://www.npmjs.com/package/mobx">MobX</Link>
+            </Heading>
+            <CodePane
+              lang="jsx"
+              source={require("raw!../examples/mobx_async_01.jsx")}
+              margin="20px auto"
+            />
+          </Slide>
+
           <Slide transition={slideTransition}>
             <Heading size={1}>
               Exercises
             </Heading>
             <List>
-              <Appear><ListItem></ListItem></Appear>
+              <Appear><ListItem>Set Up a Mock Response at <Link href="http://www.mocky.io/">mocky.io</Link>. <b>Important!</b> Set Access-Control-Allow-Origin to http://sandbox.webpackbin.com.</ListItem></Appear>
+              <Appear><ListItem>Configure <Link href="https://www.npmjs.com/package/redux-thunk">redux-thunk</Link> and perform a query against the resource</ListItem></Appear>
+              <Appear><ListItem>*Implement a <Link href="https://www.npmjs.com/package/mobx">MobX</Link> variant</ListItem></Appear>
+              <Appear><ListItem>**Implement a <Link href="https://www.npmjs.com/package/redux-saga">redux-saga</Link> variant</ListItem></Appear>
             </List>
           </Slide>
 
