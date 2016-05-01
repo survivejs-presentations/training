@@ -526,7 +526,9 @@ export default class Presentation extends React.Component {
               Exercises
             </Heading>
             <List>
-              <Appear><ListItem></ListItem></Appear>
+              <Appear><ListItem>Push application state (notes) to Redux</ListItem></Appear>
+              <Appear><ListItem>*Add another data concept (lanes)</ListItem></Appear>
+              <Appear><ListItem>*Implement a MobX variant</ListItem></Appear>
             </List>
           </Slide>
 
