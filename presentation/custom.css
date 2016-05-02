@@ -1,3 +1,7 @@
 a {
   color: #9FE9FF;
 }
+
+button svg {
+  fill: rgba(255, 219, 169, 0.33) !important;
+}
