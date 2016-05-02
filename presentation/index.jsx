@@ -336,6 +336,7 @@ export default class Presentation extends React.Component {
               <Appear><ListItem>Implement a callback (<i>onClick</i>) to capture when a <b>Note</b> is clicked</ListItem></Appear>
               <Appear><ListItem>Wire the callback to <b>App</b> (hint: add <i>props</i> to <b>Notes</b> and <b>Note</b>)</ListItem></Appear>
               <Appear><ListItem>Pass <b>Note</b> id to the callback so we can tell them apart (hint: <i>bind</i> at <b>Notes</b>)</ListItem></Appear>
+              <Appear><ListItem>*Implement a <i>lifecycle method</i> and see when it gets triggered</ListItem></Appear>
             </List>
           </Slide>
 
