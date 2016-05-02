@@ -53,7 +53,10 @@ export default class Presentation extends React.Component {
             <Heading size={1} textColor="primary">
               SurviveJS Training
             </Heading>
-            <Image src={images.stepZero} margin="0px auto 40px" height="524px"/>
+            <Image src={images.stepZero} margin="0px auto 40px" height="324px"/>
+            <Heading size={4} textColor="primary">
+              Hit space to begin
+            </Heading>
           </Slide>
 
           <Slide transition={slideTransition} bgColor="black" notes="">
@@ -222,7 +225,7 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition} bgColor="primary">
-            <Heading size={3}>
+            <Heading size={4}>
               Stateless Functions
             </Heading>
             <CodePane
@@ -233,7 +236,7 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition} bgColor="primary">
-            <Heading size={3}>
+            <Heading size={4}>
               Stateless Functions with a Shorthand
             </Heading>
             <CodePane
@@ -244,7 +247,7 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition} bgColor="primary">
-            <Heading size={3}>
+            <Heading size={4}>
               Stateless Functions Destructured
             </Heading>
             <CodePane
@@ -255,7 +258,7 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition} bgColor="primary">
-          <Heading size={3}>
+          <Heading size={4}>
             Stateless Functions Destructured and Formatted for Readability
           </Heading>
             <CodePane
@@ -266,7 +269,7 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition} bgColor="primary">
-            <Heading size={3}>
+            <Heading size={4}>
               React.createClass (old style)
             </Heading>
             <CodePane
@@ -277,7 +280,7 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition} bgColor="primary">
-            <Heading size={3}>
+            <Heading size={4}>
               ES6 Class (new style)
             </Heading>
             <CodePane
@@ -288,7 +291,7 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition} bgColor="primary">
-            <Heading size={3}>
+            <Heading size={4}>
               ES6 Class with State
             </Heading>
             <CodePane
@@ -299,7 +302,7 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition} bgColor="primary">
-            <Heading size={3}>
+            <Heading size={4}>
               ES6 Class Manual Binding
             </Heading>
             <CodePane
@@ -310,7 +313,7 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition} bgColor="primary">
-            <Heading size={3}>
+            <Heading size={4}>
               ES6 Class with a Ref
             </Heading>
             <CodePane
@@ -359,7 +362,7 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition} bgColor="primary">
-            <Heading size={3}>
+            <Heading size={4}>
               propTypes and defaultProps
             </Heading>
             <CodePane
@@ -370,7 +373,7 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition} bgColor="primary">
-            <Heading size={3}>
+            <Heading size={4}>
               propTypes and defaultProps through static
             </Heading>
             <CodePane
@@ -393,7 +396,7 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition} bgColor="primary">
-            <Heading size={3}>
+            <Heading size={4}>
               ES6 Class with Flow types
             </Heading>
             <CodePane
@@ -463,7 +466,7 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition} bgColor="primary">
-            <Heading size={3}>
+            <Heading size={4}>
               Minimal <Link href="http://redux.js.org/">Redux</Link>
             </Heading>
             <CodePane
@@ -474,7 +477,7 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition} bgColor="primary">
-            <Heading size={3}>
+            <Heading size={4}>
               <Link href="http://redux.js.org/">Redux</Link> with Store
             </Heading>
             <CodePane
@@ -500,7 +503,7 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition} bgColor="primary">
-            <Heading size={3}>
+            <Heading size={4}>
               Minimal <Link href="https://mobxjs.github.io/mobx/">MobX</Link>
             </Heading>
             <CodePane
@@ -532,7 +535,7 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition} bgColor="primary">
-            <Heading size={3}>
+            <Heading size={4}>
               Connecting Using <Link href="https://www.npmjs.com/package/react-redux">react-redux</Link> 1/3
             </Heading>
             <CodePane
@@ -543,7 +546,7 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition} bgColor="primary">
-            <Heading size={3}>
+            <Heading size={4}>
               Connecting Using <Link href="https://www.npmjs.com/package/react-redux">react-redux</Link> 2/3
             </Heading>
             <CodePane
@@ -554,7 +557,7 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition} bgColor="primary">
-            <Heading size={3}>
+            <Heading size={4}>
               Connecting Using <Link href="https://www.npmjs.com/package/react-redux">react-redux</Link> 3/3
             </Heading>
             <CodePane
@@ -576,7 +579,7 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition} bgColor="primary">
-            <Heading size={3}>
+            <Heading size={4}>
               Connecting Using <Link href="https://www.npmjs.com/package/mobx-react">mobx-react</Link>
             </Heading>
             <CodePane
@@ -616,7 +619,7 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition} bgColor="primary">
-            <Heading size={3}>
+            <Heading size={4}>
               Async with <Link href="https://www.npmjs.com/package/redux-thunk">redux-thunk</Link> 1/2
             </Heading>
             <CodePane
@@ -627,7 +630,7 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition} bgColor="primary">
-            <Heading size={3}>
+            <Heading size={4}>
               Async with <Link href="https://www.npmjs.com/package/redux-thunk">redux-thunk</Link> 2/2
             </Heading>
             <CodePane
@@ -656,7 +659,7 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition} bgColor="primary">
-            <Heading size={3}>
+            <Heading size={4}>
               Async with <Link href="https://www.npmjs.com/package/mobx">MobX</Link>
             </Heading>
             <CodePane
@@ -716,7 +719,7 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition} bgColor="primary">
-            <Heading size={3}>
+            <Heading size={4}>
               Routing with react-router
             </Heading>
             <CodePane
