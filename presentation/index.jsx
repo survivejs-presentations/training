@@ -803,12 +803,22 @@ export default class Presentation extends React.Component {
             <Image src={images.stepNine} margin="0px auto 40px" height="524px"/>
           </Slide>
 
+          <Slide transition={slideTransition} bgColor="primary">
+            <Image src={images.testingPyramid} margin="40px auto" height="524px" />
+            <Text>Adapted from Mike Cohn</Text>
+          </Slide>
+
           <Slide transition={slideTransition}>
             <Heading size={1}>
-              Alternatives
+              Testing Tools
             </Heading>
             <List>
-              <Appear><ListItem></ListItem></Appear>
+              <Appear><ListItem>Choose what you want for high level. See <Link href="https://gkedge.gitbooks.io/javascript-acceptance-testing/content/">Greg Kedge's guide</Link></ListItem></Appear>
+              <Appear><ListItem>React is particularly good for unit testing</ListItem></Appear>
+              <Appear><ListItem>Example: Karma + Phantom + Mocha + <Link href="https://facebook.github.io/react/docs/test-utils.html">React Test Utilities</Link></ListItem></Appear>
+              <Appear><ListItem><Link href="http://airbnb.io/enzyme/">Enzyme</Link> - Lighter alternative to React Test Utilities</ListItem></Appear>
+              <Appear><ListItem>Shallow rendering - No DOM, one level deep, no <i>refs</i></ListItem></Appear>
+              <Appear><ListItem>Property based testing - <Link href="https://jsverify.github.io/">JSVerify</Link></ListItem></Appear>
             </List>
           </Slide>
 
@@ -817,7 +827,10 @@ export default class Presentation extends React.Component {
               Exercises
             </Heading>
             <List>
-              <Appear><ListItem></ListItem></Appear>
+              <Appear><ListItem>Write a naïve <Link href="https://mochajs.org/">Mocha</Link> test</ListItem></Appear>
+              <Appear><ListItem>Assert that <b>Notes</b> renders using <Link href="https://facebook.github.io/react/docs/test-utils.html">React Test Utilities</Link></ListItem></Appear>
+              <Appear><ListItem>*Assert that <b>Notes</b> renders using <Link href="http://airbnb.io/enzyme/">Enzyme</Link></ListItem></Appear>
+              <Appear><ListItem>**Write a property based test with <Link href="https://jsverify.github.io/">JSVerify</Link></ListItem></Appear>
             </List>
           </Slide>
 
