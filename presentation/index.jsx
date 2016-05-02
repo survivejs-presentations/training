@@ -134,9 +134,9 @@ export default class Presentation extends React.Component {
               Exercises
             </Heading>
             <List>
-              <Appear><ListItem>Set up a bin based on the React boilerplate</ListItem></Appear>
+              <Appear><ListItem>Set up a <Link href="http://www.webpackbin.com/">bin</Link> based on the React boilerplate below the <i>Boilerplates</i> menu</ListItem></Appear>
               <Appear><ListItem>Familiarize yourself with the UI and develop your first "hello world!" application with React</ListItem></Appear>
-              <Appear><ListItem>Save the result and link to it at gitter (we'll need this later)</ListItem></Appear>
+              <Appear><ListItem>Save the result and link to it at <Link href="https://gitter.im/survivejs/training">gitter</Link> (we'll need this later)</ListItem></Appear>
               <Appear><ListItem>*Examine generated code through Babel repl. Can you see what happens to JSX?</ListItem></Appear>
             </List>
           </Slide>
