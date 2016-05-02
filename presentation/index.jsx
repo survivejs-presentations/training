@@ -48,7 +48,7 @@ export default class Presentation extends React.Component {
   render() {
     return (
       <Spectacle theme={theme}>
-        <Deck transition={slideTransition} transitionDuration={500}>
+        <Deck transition={slideTransition} transitionDuration={500} progress="bar">
           <Slide transition={slideTransition} bgColor="white">
             <Heading size={1} textColor="primary">
               SurviveJS Training
