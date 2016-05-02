@@ -748,10 +748,39 @@ export default class Presentation extends React.Component {
 
           <Slide transition={slideTransition}>
             <Heading size={1}>
-              Alternatives
+              <Link href="https://facebook.github.io/react/docs/perf.html">React Performance Tools</Link>
             </Heading>
             <List>
-              <Appear><ListItem></ListItem></Appear>
+              <Appear><ListItem>Development mode only - performance overhead</ListItem></Appear>
+              <Appear><ListItem>Measure with <i>Perf.start()</i> and <i>Perf.stop()</i></ListItem></Appear>
+              <Appear><ListItem>Get results with <i>Perf.getLastMeasurements()</i></ListItem></Appear>
+              <Appear><ListItem><i>Perf.print{'<Inclusive|Exclusive>'}(measurements)</i></ListItem></Appear>
+              <Appear><ListItem><i>Perf.print{'<'}<b>Wasted</b>|Operations{'>'}(measurements)</i></ListItem></Appear>
+            </List>
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Heading size={1}>
+              Chrome Tips
+            </Heading>
+            <List>
+              <Appear><ListItem>Note flashing at the <i>Elements</i> tab</ListItem></Appear>
+              <Appear><ListItem>Keep an eye on the <i>Network</i> tab (latency)</ListItem></Appear>
+              <Appear><ListItem>Take a memory snapshot and analyze at the <i>Profiles</i> tab</ListItem></Appear>
+              <Appear><ListItem>Note different performance in development/production!</ListItem></Appear>
+              <Appear><ListItem><Link href="https://developers.google.com/web/tools/chrome-devtools/profile/memory-problems/memory-diagnosis">Google tutorial</Link></ListItem></Appear>
+            </List>
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Heading size={1}>
+              React Tips
+            </Heading>
+            <List>
+              <Appear><ListItem>Remember to set <b>process.env.NODE_ENV</b> to <b>production</b> when building</ListItem></Appear>
+              <Appear><ListItem>Consider using <Link href="https://www.npmjs.com/package/react-lite">react-lite</Link> or <Link href="https://www.npmjs.com/package/preact">preact</Link></ListItem></Appear>
+              <Appear><ListItem>Leverage client caching (React, other deps) through vendor bundles (hash in name)</ListItem></Appear>
+              <Appear><ListItem>Consider loading vendor dependencies through a CDN with a local fallback</ListItem></Appear>
             </List>
           </Slide>
 
@@ -760,7 +789,10 @@ export default class Presentation extends React.Component {
               Exercises
             </Heading>
             <List>
-              <Appear><ListItem></ListItem></Appear>
+              <Appear><ListItem>Profile the performance of your React application using <Link href="https://facebook.github.io/react/docs/perf.html">React Performance Tools</Link></ListItem></Appear>
+              <Appear><ListItem>Profile the memory usage of your React application using Chrome utilities</ListItem></Appear>
+              <Appear><ListItem>*Build your application in production mode and try again. Can you see a difference?</ListItem></Appear>
+              <Appear><ListItem>**Build your application with <Link href="https://www.npmjs.com/package/react-lite">react-lite</Link> and try again. Can you see a difference?</ListItem></Appear>
             </List>
           </Slide>
 
