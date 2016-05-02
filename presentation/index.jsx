@@ -159,7 +159,7 @@ export default class Presentation extends React.Component {
               React Targets
             </Heading>
             <List>
-              <Appear><ListItem>Web - <Link href="https://www.npmjs.com/package/react-dom">react-dom</Link></ListItem></Appear>
+              <Appear><ListItem>Web (universal!) - <Link href="https://www.npmjs.com/package/react-dom">react-dom</Link></ListItem></Appear>
               <Appear><ListItem>Mobile - <Link href="https://facebook.github.io/react-native/">React Native</Link></ListItem></Appear>
               <Appear><ListItem>Terminal - <Link href="https://github.com/Yomguithereal/react-blessed">react-blessed</Link></ListItem></Appear>
               <Appear><ListItem>3D graphics - <Link href="https://projectseptemberinc.gitbooks.io/gl-react/content/">gl-react</Link></ListItem></Appear>
