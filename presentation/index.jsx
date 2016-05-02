@@ -569,7 +569,7 @@ export default class Presentation extends React.Component {
               <Link href="https://www.npmjs.com/package/react-redux">react-redux</Link> Recap
             </Heading>
             <List>
-              <Appear><ListItem>Split application to <b>smart</b> (connect) and <b>dumb</b> (presentation) components</ListItem></Appear>
+              <Appear><ListItem>Split application to <b>containers</b> (connect) and <b>presentational</b> components</ListItem></Appear>
               <Appear><ListItem>Push <i>connect</i> as low as possible to improve performance</ListItem></Appear>
               <Appear><ListItem>Use <Link href="https://github.com/reactjs/reselect">reselect</Link> to deal with derived data</ListItem></Appear>
             </List>
@@ -591,7 +591,7 @@ export default class Presentation extends React.Component {
               <Link href="https://www.npmjs.com/package/mobx-react">mobx-react</Link> Recap
             </Heading>
             <List>
-              <Appear><ListItem>No distinction between smart and dumb components</ListItem></Appear>
+              <Appear><ListItem>No distinction between container and presentational components</ListItem></Appear>
               <Appear><ListItem>Annotate all components that are specific to your application</ListItem></Appear>
               <Appear><ListItem>MobX deals with updating for you</ListItem></Appear>
             </List>
