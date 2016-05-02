@@ -20,5 +20,6 @@ export default _.mapValues({
   kanban: require("./kanban.gif"),
   webpackGraph: require("./webpack_graph.png"),
   lifecycle: require("./lifecycle.png"),
-  flux: require("./flux.png")
+  flux: require("./flux.png"),
+  testingPyramid: require("./testing_pyramid.png")
 }, (v) => v.replace("/", ""));
