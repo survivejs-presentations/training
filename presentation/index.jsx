@@ -624,10 +624,38 @@ export default class Presentation extends React.Component {
 
           <Slide transition={slideTransition}>
             <Heading size={1}>
+              Alternatives
+            </Heading>
+            <List>
+              <Appear><ListItem><Link href="https://www.npmjs.com/package/react-router">react-router</Link> - De facto standard</ListItem></Appear>
+              <Appear><ListItem><Link href="https://www.npmjs.com/package/react-router-redux">react-router-redux</Link> - Access to react-router data through a Redux store</ListItem></Appear>
+              <Appear><ListItem><Link href="https://www.npmjs.com/package/react-router-component">react-router-component</Link></ListItem></Appear>
+              <Appear><ListItem><Link href="https://www.npmjs.com/package/react-router5">react-router5</Link></ListItem></Appear>
+              <Appear><ListItem><Link href="https://www.npmjs.com/package/redux-router5">redux-router5</Link> - Redux bindings for react-router5</ListItem></Appear>
+            </List>
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <Heading size={3}>
+              Routing with react-router
+            </Heading>
+            <CodePane
+              lang="jsx"
+              source={require("raw!../examples/react_router_01.jsx")}
+              margin="20px auto"
+            />
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Heading size={1}>
               Exercises
             </Heading>
             <List>
-              <Appear><ListItem></ListItem></Appear>
+              <Appear><ListItem>Set up <Link to="https://github.com/survivejs/react-boilerplate">react-boilerplate</Link></ListItem></Appear>
+              <Appear><ListItem>Include react-router to the boilerplate project through <b>npm i react-router -D</b></ListItem></Appear>
+              <Appear><ListItem>Add initial routes (<i>/kanban</i> and <i>/about</i>)</ListItem></Appear>
+              <Appear><ListItem>*Add a nested <i>/kanban</i> route that accepts a <i>kanbanId</i> parameter</ListItem></Appear>
+              <Appear><ListItem>**Show the passed id using <i>this.props.params</i> through the UI</ListItem></Appear>
             </List>
           </Slide>
 
@@ -636,6 +664,15 @@ export default class Presentation extends React.Component {
               React 707 - Performance
             </Heading>
             <Image src={images.stepEight} margin="0px auto 40px" height="524px"/>
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Heading size={1}>
+              Alternatives
+            </Heading>
+            <List>
+              <Appear><ListItem></ListItem></Appear>
+            </List>
           </Slide>
 
           <Slide transition={slideTransition}>
@@ -656,6 +693,15 @@ export default class Presentation extends React.Component {
 
           <Slide transition={slideTransition}>
             <Heading size={1}>
+              Alternatives
+            </Heading>
+            <List>
+              <Appear><ListItem></ListItem></Appear>
+            </List>
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Heading size={1}>
               Exercises
             </Heading>
             <List>
@@ -668,6 +714,15 @@ export default class Presentation extends React.Component {
               React 909 - Structuring Projects
             </Heading>
             <Image src={images.stepTen} margin="0px auto 40px" height="524px"/>
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Heading size={1}>
+              Alternatives
+            </Heading>
+            <List>
+              <Appear><ListItem></ListItem></Appear>
+            </List>
           </Slide>
 
           <Slide transition={slideTransition}>
