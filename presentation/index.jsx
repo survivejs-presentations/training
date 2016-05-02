@@ -484,6 +484,21 @@ export default class Presentation extends React.Component {
             />
           </Slide>
 
+          <Slide transition={slideTransition}>
+            <Heading size={1}>
+              Redux Briefly
+            </Heading>
+            <List>
+              <Appear><ListItem>More of a guideline</ListItem></Appear>
+              <Appear><ListItem>Utilities like <Link href="http://redux.js.org/docs/api/combineReducers.html">combineReducers</Link> to manage complexity &#8594; Single tree for state</ListItem></Appear>
+              <Appear><ListItem>Actions == Something happened</ListItem></Appear>
+              <Appear><ListItem>Reducers == How application state changes (pure!)</ListItem></Appear>
+              <Appear><ListItem><Link href="https://github.com/gaearon/normalizr">Normalize</Link> to make it easier to write reducers</ListItem></Appear>
+              <Appear><ListItem>Extend through middleware and solutions around Redux</ListItem></Appear>
+              <Appear><ListItem>Strong ecosystem</ListItem></Appear>
+            </List>
+          </Slide>
+
           <Slide transition={slideTransition} bgColor="primary">
             <Heading size={3}>
               Minimal <Link href="https://mobxjs.github.io/mobx/">MobX</Link>
@@ -493,6 +508,20 @@ export default class Presentation extends React.Component {
               source={require("raw!../examples/mobx_01.jsx")}
               margin="20px auto"
             />
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Heading size={1}>
+              MobX Briefly
+            </Heading>
+            <List>
+              <Appear><ListItem>Modeled after spreadsheets</ListItem></Appear>
+              <Appear><ListItem>Wraps data structures in observables</ListItem></Appear>
+              <Appear><ListItem>And then reacts to changes on <i>autorun</i></ListItem></Appear>
+              <Appear><ListItem>Supports also <i>computed</i> data</ListItem></Appear>
+              <Appear><ListItem>Mutable structures &#8594; Easier reference handling</ListItem></Appear>
+              <Appear><ListItem>Light alternative to Redux</ListItem></Appear>
+            </List>
           </Slide>
 
           <Slide transition={slideTransition} bgColor="primary">
@@ -535,6 +564,17 @@ export default class Presentation extends React.Component {
             />
           </Slide>
 
+          <Slide transition={slideTransition}>
+            <Heading size={1}>
+              <Link href="https://www.npmjs.com/package/react-redux">react-redux</Link> Recap
+            </Heading>
+            <List>
+              <Appear><ListItem>Split application to <b>smart</b> (connect) and <b>dumb</b> (presentation) components</ListItem></Appear>
+              <Appear><ListItem>Push <i>connect</i> as low as possible to improve performance</ListItem></Appear>
+              <Appear><ListItem>Use <Link href="https://github.com/reactjs/reselect">reselect</Link> to deal with derived data</ListItem></Appear>
+            </List>
+          </Slide>
+
           <Slide transition={slideTransition} bgColor="primary">
             <Heading size={3}>
               Connecting Using <Link href="https://www.npmjs.com/package/mobx-react">mobx-react</Link>
@@ -544,6 +584,17 @@ export default class Presentation extends React.Component {
               source={require("raw!../examples/mobx_02.jsx")}
               margin="20px auto"
             />
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Heading size={1}>
+              <Link href="https://www.npmjs.com/package/mobx-react">mobx-react</Link> Recap
+            </Heading>
+            <List>
+              <Appear><ListItem>No distinction between smart and dumb components</ListItem></Appear>
+              <Appear><ListItem>Annotate all components that are specific to your application</ListItem></Appear>
+              <Appear><ListItem>MobX deals with updating for you</ListItem></Appear>
+            </List>
           </Slide>
 
           <Slide transition={slideTransition}>
@@ -587,6 +638,18 @@ export default class Presentation extends React.Component {
           </Slide>
 
           <Slide transition={slideTransition}>
+            <Heading size={1}>
+              <Link href="https://www.npmjs.com/package/redux-thunk">redux-thunk</Link> Recap
+            </Heading>
+            <List>
+              <Appear><ListItem>Split query to stages (request/success/failure)</ListItem></Appear>
+              <Appear><ListItem>Return a thunk and trigger stages as you call the backend</ListItem></Appear>
+              <Appear><ListItem>React to stages at reducers and alter state</ListItem></Appear>
+              <Appear><ListItem>Consider pushing the API client to a middleware (looser coupling)</ListItem></Appear>
+            </List>
+          </Slide>
+
+          <Slide transition={slideTransition}>
             <Heading size={2}>
               <Link href="https://www.npmjs.com/package/redux-saga">redux-saga</Link>
             </Heading>
@@ -601,6 +664,17 @@ export default class Presentation extends React.Component {
               source={require("raw!../examples/mobx_async_01.jsx")}
               margin="20px auto"
             />
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Heading size={1}>
+              <Link href="https://www.npmjs.com/package/mobx">MobX</Link> Async Recap
+            </Heading>
+            <List>
+              <Appear><ListItem>Works thanks to observables</ListItem></Appear>
+              <Appear><ListItem>Consider using a flag to signify loading stage</ListItem></Appear>
+              <Appear><ListItem>Structure as you like (API client etc.). ES6 classes can work.</ListItem></Appear>
+            </List>
           </Slide>
 
           <Slide transition={slideTransition}>
