@@ -843,10 +843,84 @@ export default class Presentation extends React.Component {
 
           <Slide transition={slideTransition}>
             <Heading size={1}>
-              Alternatives
+              All in One File
             </Heading>
             <List>
-              <Appear><ListItem></ListItem></Appear>
+              <Appear><ListItem>index.jsx</ListItem></Appear>
+            </List>
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Heading size={1}>
+              Split to Components
+            </Heading>
+            <List>
+              <Appear><ListItem>index.jsx</ListItem></Appear>
+              <Appear><ListItem>App.jsx</ListItem></Appear>
+              <Appear><ListItem>Lanes.jsx</ListItem></Appear>
+              <Appear><ListItem>Lane.jsx</ListItem></Appear>
+              <Appear><ListItem>Notes.jsx</ListItem></Appear>
+              <Appear><ListItem>Note.jsx</ListItem></Appear>
+            </List>
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Heading size={1}>
+              Split Based on Type
+            </Heading>
+            <List>
+              <Appear><ListItem>index.jsx</ListItem></Appear>
+              <Appear><ListItem>App.jsx</ListItem></Appear>
+              <Appear><ListItem>lanes/index.js</ListItem></Appear>
+              <Appear><ListItem>lanes/Lanes.jsx</ListItem></Appear>
+              <Appear><ListItem>lanes/Lane.jsx</ListItem></Appear>
+              <Appear><ListItem>notes/index.js</ListItem></Appear>
+              <Appear><ListItem>notes/Notes.jsx</ListItem></Appear>
+              <Appear><ListItem>notes/Note.jsx</ListItem></Appear>
+            </List>
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Heading size={1}>
+              Split Per Route
+            </Heading>
+            <List>
+              <Appear><ListItem>index.jsx</ListItem></Appear>
+              <Appear><ListItem>App.jsx</ListItem></Appear>
+              <Appear><ListItem>Routes.jsx</ListItem></Appear>
+              <Appear><ListItem>home/</ListItem></Appear>
+              <Appear><ListItem>kanban/</ListItem></Appear>
+              <Appear><ListItem>about/</ListItem></Appear>
+            </List>
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Heading size={1}>
+              Model Screens
+            </Heading>
+            <List>
+              <Appear><ListItem>index.jsx</ListItem></Appear>
+              <Appear><ListItem>App.jsx</ListItem></Appear>
+              <Appear><ListItem>Routes.jsx</ListItem></Appear>
+              <Appear><ListItem>screens/</ListItem></Appear>
+              <Appear><ListItem>screens/index.js</ListItem></Appear>
+              <Appear><ListItem>screens/home/</ListItem></Appear>
+              <Appear><ListItem>screens/kanban/</ListItem></Appear>
+              <Appear><ListItem>screens/about/</ListItem></Appear>
+            </List>
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Heading size={1}>
+              Pointers
+            </Heading>
+            <List>
+              <Appear><ListItem>No single right way to structure</ListItem></Appear>
+              <Appear><ListItem>Bad structure works against you</ListItem></Appear>
+              <Appear><ListItem>Good structure guides you</ListItem></Appear>
+              <Appear><ListItem>Design pattern - Extract component/framework</ListItem></Appear>
+              <Appear><ListItem>Push generic components out of the main project</ListItem></Appear>
+              <Appear><ListItem>Maintain abstraction - low to high specificity</ListItem></Appear>
             </List>
           </Slide>
 
@@ -855,7 +929,9 @@ export default class Presentation extends React.Component {
               Exercises
             </Heading>
             <List>
-              <Appear><ListItem></ListItem></Appear>
+              <Appear><ListItem>Design a structure for a kanban application without routing</ListItem></Appear>
+              <Appear><ListItem>Design a structure for a kanban application with routing</ListItem></Appear>
+              <Appear><ListItem>*Design multiple structures for an arbitrary application. Consider pros/cons.</ListItem></Appear>
             </List>
           </Slide>
 
