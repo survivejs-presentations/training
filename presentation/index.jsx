@@ -124,7 +124,7 @@ export default class Presentation extends React.Component {
           <Slide transition={slideTransition} bgColor="primary">
             <Link href="http://www.webpackbin.com/">
               <Heading size={1} textColor="tertiary">
-                WebpackBin
+                <Link href="http://www.webpackbin.com/">WebpackBin</Link>
               </Heading>
             </Link>
           </Slide>
@@ -156,6 +156,26 @@ export default class Presentation extends React.Component {
 
           <Slide transition={slideTransition}>
             <Heading size={1}>
+              React Philosophy
+            </Heading>
+            <List>
+              <Appear><ListItem>Model your application as a component hierarchy</ListItem></Appear>
+              <Appear><ListItem>Each component can have <i>props</i> and <i>state</i></ListItem></Appear>
+              <Appear><ListItem>Escape hatches through <i>lifecycle methods</i> and <i>refs</i></ListItem></Appear>
+              <Appear><ListItem>React forces you to think about <i>state</i> (good thing)</ListItem></Appear>
+              <Appear><ListItem>Implements Virtual DOM</ListItem></Appear>
+            </List>
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <Heading size={2}>
+              Virtual DOM
+            </Heading>
+            <Image src={images.vdom} margin="40px auto" height="324px" />
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Heading size={1}>
               React Targets
             </Heading>
             <List>
@@ -166,13 +186,6 @@ export default class Presentation extends React.Component {
               <Appear><ListItem>Canvas graphics - <Link href="https://github.com/Flipboard/react-canvas">react-canvas</Link></ListItem></Appear>
               <Appear><ListItem>PDF generators - <Link href="https://github.com/bebraw/generate-invoice">demo</Link></ListItem></Appear>
             </List>
-          </Slide>
-
-          <Slide transition={slideTransition} bgColor="primary">
-            <Heading size={2}>
-              Virtual DOM
-            </Heading>
-            <Image src={images.vdom} margin="40px auto" height="324px" />
           </Slide>
 
           <Slide transition={slideTransition} bgColor="primary">
