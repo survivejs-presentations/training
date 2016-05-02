@@ -764,7 +764,7 @@ export default class Presentation extends React.Component {
               Chrome Tips
             </Heading>
             <List>
-              <Appear><ListItem>Note flashing at the <i>Elements</i> tab</ListItem></Appear>
+              <Appear><ListItem>Note the flashing at the <i>Elements</i> tab</ListItem></Appear>
               <Appear><ListItem>Keep an eye on the <i>Network</i> tab (latency)</ListItem></Appear>
               <Appear><ListItem>Take a memory snapshot and analyze at the <i>Profiles</i> tab</ListItem></Appear>
               <Appear><ListItem>Note different performance in development/production!</ListItem></Appear>
