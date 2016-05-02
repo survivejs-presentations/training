@@ -679,6 +679,12 @@ export default class Presentation extends React.Component {
 
           <Slide transition={slideTransition}>
             <Heading size={1}>
+              <Link href="https://facebook.github.io/relay/">Relay</Link> and <Link href="https://netflix.github.io/falcor/">Falcor</Link>
+            </Heading>
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Heading size={1}>
               Exercises
             </Heading>
             <List>
