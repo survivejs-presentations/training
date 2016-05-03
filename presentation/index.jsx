@@ -751,14 +751,24 @@ export default class Presentation extends React.Component {
 
           <Slide transition={slideTransition}>
             <Heading size={1}>
-              <Link href="https://facebook.github.io/react/docs/perf.html">React Performance Tools</Link>
+              <Link href="https://facebook.github.io/react/docs/perf.html">React Performance Tools</Link> 1/2
             </Heading>
             <List>
               <Appear><ListItem>Development mode only - performance overhead</ListItem></Appear>
               <Appear><ListItem>Measure with <code>Perf.start()</code> and <code>Perf.stop()</code></ListItem></Appear>
               <Appear><ListItem>Get results with <code>Perf.getLastMeasurements()</code></ListItem></Appear>
-              <Appear><ListItem><code>Perf.print{'<Inclusive|Exclusive>'}(measurements)</code></ListItem></Appear>
-              <Appear><ListItem><code>Perf.print{'<'}<b>Wasted</b>|Operations{'>'}(measurements)</code></ListItem></Appear>
+            </List>
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Heading size={1}>
+              <Link href="https://facebook.github.io/react/docs/perf.html">React Performance Tools</Link> 2/2
+            </Heading>
+            <List>
+              <Appear><ListItem><code>Perf.printInclusive(measurements)</code></ListItem></Appear>
+              <Appear><ListItem><code>Perf.printExclusive(measurements)</code></ListItem></Appear>
+              <Appear><ListItem><code><b>Perf.printWasted(measurements)</b></code></ListItem></Appear>
+              <Appear><ListItem><code>Perf.printOperations(measurements)</code></ListItem></Appear>
             </List>
           </Slide>
 
