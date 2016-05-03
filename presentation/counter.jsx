@@ -14,7 +14,7 @@ export default class CatCounter extends React.Component {
         <Heading size={5} textColor="black">
           I've seen {this.state.count} cats
         </Heading>
-        <button type="button" onClick={this.sawCat}>
+        <button type="button" className="cat-button" onClick={this.sawCat}>
           Saw a Cat
         </button>
       </div>
