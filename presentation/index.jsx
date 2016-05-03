@@ -137,7 +137,7 @@ export default class Presentation extends React.Component {
               Exercises
             </Heading>
             <List>
-              <Appear><ListItem>Head to <Link href="http://www.webpackbin.com/">WebpackBin</Link> and create a new React project (<i>Boilerplates</i> menu)</ListItem></Appear>
+              <Appear><ListItem>Head to <Link href="http://www.webpackbin.com/">WebpackBin</Link> and create a new React project (<b>Boilerplates</b> menu)</ListItem></Appear>
               <Appear><ListItem>Familiarize yourself with the UI and develop your first "hello world!" application with React</ListItem></Appear>
               <Appear><ListItem>Save the result and link to it at <Link href="https://gitter.im/survivejs/training">gitter</Link> (we'll need this later)</ListItem></Appear>
               <Appear><ListItem>*Examine generated code through Babel repl. Can you see what happens to JSX?</ListItem></Appear>
@@ -163,9 +163,9 @@ export default class Presentation extends React.Component {
             </Heading>
             <List>
               <Appear><ListItem>Model your application as a component hierarchy</ListItem></Appear>
-              <Appear><ListItem>Each component can have <i>props</i> and <i>state</i></ListItem></Appear>
-              <Appear><ListItem>Escape hatches through <i>lifecycle methods</i> and <i>refs</i></ListItem></Appear>
-              <Appear><ListItem>React forces you to think about <i>state</i> (good thing)</ListItem></Appear>
+              <Appear><ListItem>Each component can have <code>props</code> and <code>state</code></ListItem></Appear>
+              <Appear><ListItem>Escape hatches through <code>lifecycle methods</code> and <code>refs</code></ListItem></Appear>
+              <Appear><ListItem>React forces you to think about <code>state</code> (good thing)</ListItem></Appear>
               <Appear><ListItem>Implements Virtual DOM</ListItem></Appear>
             </List>
           </Slide>
@@ -211,8 +211,8 @@ export default class Presentation extends React.Component {
               Exercises
             </Heading>
             <List>
-              <Appear><ListItem>Add state to your application constructor (<i>this.state = ...</i>). Remember to <i>bind</i>.</ListItem></Appear>
-              <Appear><ListItem>Add a button and alter the count <i>onClick</i> through <i>setState</i>. Why is <i>setState</i> needed?</ListItem></Appear>
+              <Appear><ListItem>Add state to your application constructor through <code>this.state = ...</code>. Remember to <code>bind</code>.</ListItem></Appear>
+              <Appear><ListItem>Add a button and alter the count <code>onClick</code> through <code>setState</code>. Why is <code>setState</code> needed?</ListItem></Appear>
               <Appear><ListItem>*Add a custom button for resetting the state and attach logic</ListItem></Appear>
             </List>
           </Slide>
@@ -270,7 +270,7 @@ export default class Presentation extends React.Component {
 
           <Slide transition={slideTransition} bgColor="primary">
             <Heading size={4}>
-              React.createClass (old style)
+              <code>React.createClass</code> (old style)
             </Heading>
             <CodePane
               lang="jsx"
@@ -336,10 +336,10 @@ export default class Presentation extends React.Component {
             </Heading>
             <List>
               <Appear><ListItem>Extract a <b>Notes</b> component from App</ListItem></Appear>
-              <Appear><ListItem>Implement a callback (<i>onClick</i>) to capture when a <b>Note</b> is clicked</ListItem></Appear>
-              <Appear><ListItem>Wire the callback to <b>App</b> (hint: add <i>props</i> to <b>Notes</b> and <b>Note</b>)</ListItem></Appear>
-              <Appear><ListItem>Pass <b>Note</b> id to the callback so we can tell them apart (hint: <i>bind</i> at <b>Notes</b>)</ListItem></Appear>
-              <Appear><ListItem>*Implement a <i>lifecycle method</i> and see when it gets triggered</ListItem></Appear>
+              <Appear><ListItem>Implement a callback (<code>onClick</code>) to capture when a <b>Note</b> is clicked</ListItem></Appear>
+              <Appear><ListItem>Wire the callback to <b>App</b> (hint: add <code>props</code> to <b>Notes</b> and <b>Note</b>)</ListItem></Appear>
+              <Appear><ListItem>Pass <b>Note</b> id to the callback so we can tell them apart (hint: <code>bind</code> at <b>Notes</b>)</ListItem></Appear>
+              <Appear><ListItem>*Implement a <code>lifecycle method</code> and see when it gets triggered</ListItem></Appear>
             </List>
           </Slide>
 
@@ -352,7 +352,7 @@ export default class Presentation extends React.Component {
 
           <Slide transition={slideTransition}>
             <Heading size={1}>
-              propTypes and defaultProps
+              <code>propTypes</code> and <code>defaultProps</code>
             </Heading>
             <List>
               <Appear><ListItem>Flexibility vs. robustness</ListItem></Appear>
@@ -363,7 +363,7 @@ export default class Presentation extends React.Component {
 
           <Slide transition={slideTransition} bgColor="primary">
             <Heading size={4}>
-              propTypes and defaultProps
+              <code>propTypes</code> and <code>defaultProps</code>
             </Heading>
             <CodePane
               lang="jsx"
@@ -374,7 +374,7 @@ export default class Presentation extends React.Component {
 
           <Slide transition={slideTransition} bgColor="primary">
             <Heading size={4}>
-              propTypes and defaultProps through static
+              <code>propTypes</code> and <code>defaultProps</code> through <code>static</code>
             </Heading>
             <CodePane
               lang="jsx"
@@ -389,7 +389,7 @@ export default class Presentation extends React.Component {
             </Heading>
             <List>
               <Appear><ListItem>Gradual typing through static analysis</ListItem></Appear>
-              <Appear><ListItem>Might replace propTypes over longer term</ListItem></Appear>
+              <Appear><ListItem>Might replace <code>propTypes</code> over longer term</ListItem></Appear>
               <Appear><ListItem>Runtime checks with <Link href="https://www.npmjs.com/package/babel-plugin-typecheck">babel-plugin-typecheck</Link></ListItem></Appear>
               <Appear><ListItem>No support for function style components yet <Link href="https://github.com/facebook/flow/issues/1081">#1081</Link></ListItem></Appear>
             </List>
@@ -424,8 +424,8 @@ export default class Presentation extends React.Component {
               Exercises
             </Heading>
             <List>
-              <Appear><ListItem>Annotate <b>Notes</b> with <i>propTypes</i></ListItem></Appear>
-              <Appear><ListItem>Look up <i>React.PropTypes.shape</i> and see how it works</ListItem></Appear>
+              <Appear><ListItem>Annotate <b>Notes</b> with <code>propTypes</code></ListItem></Appear>
+              <Appear><ListItem>Look up <code>React.PropTypes.shape</code> and see how it works</ListItem></Appear>
               <Appear><ListItem>*Test <Link href="http://tryflow.org/">tryflow.org</Link></ListItem></Appear>
             </List>
           </Slide>
@@ -520,8 +520,8 @@ export default class Presentation extends React.Component {
             <List>
               <Appear><ListItem>Modeled after spreadsheets</ListItem></Appear>
               <Appear><ListItem>Wraps data structures in observables</ListItem></Appear>
-              <Appear><ListItem>And then reacts to changes on <i>autorun</i></ListItem></Appear>
-              <Appear><ListItem>Supports also <i>computed</i> data</ListItem></Appear>
+              <Appear><ListItem>And then reacts to changes on <code>autorun</code></ListItem></Appear>
+              <Appear><ListItem>Supports also <code>computed</code> data</ListItem></Appear>
               <Appear><ListItem>Mutable structures &#8594; Easier reference handling</ListItem></Appear>
               <Appear><ListItem>Light alternative to Redux</ListItem></Appear>
             </List>
@@ -573,7 +573,7 @@ export default class Presentation extends React.Component {
             </Heading>
             <List>
               <Appear><ListItem>Split application to <b>containers</b> (connect) and <b>presentational</b> components</ListItem></Appear>
-              <Appear><ListItem>Push <i>connect</i> as low as possible to improve performance</ListItem></Appear>
+              <Appear><ListItem>Push <code>connect</code> as low in the hierarchy as possible to improve performance</ListItem></Appear>
               <Appear><ListItem>Use <Link href="https://github.com/reactjs/reselect">reselect</Link> to deal with derived data</ListItem></Appear>
             </List>
           </Slide>
@@ -605,7 +605,7 @@ export default class Presentation extends React.Component {
               Exercises
             </Heading>
             <List>
-              <Appear><ListItem>Push application <i>state</i> (notes) to Redux</ListItem></Appear>
+              <Appear><ListItem>Push application <code>state</code> (notes) to Redux</ListItem></Appear>
               <Appear><ListItem>*Add another data concept (<b>Lane</b>)</ListItem></Appear>
               <Appear><ListItem>**Implement a MobX variant</ListItem></Appear>
             </List>
@@ -691,7 +691,7 @@ export default class Presentation extends React.Component {
               Exercises
             </Heading>
             <List>
-              <Appear><ListItem>Set Up a Mock Response at <Link href="http://www.mocky.io/">mocky.io</Link>. <b>Important!</b> Set <i>Access-Control-Allow-Origin</i> to <i>http://sandbox.webpackbin.com</i>.</ListItem></Appear>
+              <Appear><ListItem>Set Up a Mock Response at <Link href="http://www.mocky.io/">mocky.io</Link>. <b>Important!</b> Set <code>Access-Control-Allow-Origin</code> to <code>http://sandbox.webpackbin.com</code>.</ListItem></Appear>
               <Appear><ListItem>Configure <Link href="https://www.npmjs.com/package/redux-thunk">redux-thunk</Link> and perform a query against the resource</ListItem></Appear>
               <Appear><ListItem>*Implement a <Link href="https://www.npmjs.com/package/mobx">MobX</Link> variant</ListItem></Appear>
               <Appear><ListItem>**Implement a <Link href="https://www.npmjs.com/package/redux-saga">redux-saga</Link> variant</ListItem></Appear>
@@ -736,9 +736,9 @@ export default class Presentation extends React.Component {
             <List>
               <Appear><ListItem>Set up <Link to="https://github.com/survivejs/react-boilerplate">react-boilerplate</Link></ListItem></Appear>
               <Appear><ListItem>Include react-router to the boilerplate project through <b>npm i react-router -D</b></ListItem></Appear>
-              <Appear><ListItem>Add initial routes (<i>/kanban</i> and <i>/about</i>)</ListItem></Appear>
-              <Appear><ListItem>*Add a nested <i>/kanban</i> route that accepts a <i>kanbanId</i> parameter</ListItem></Appear>
-              <Appear><ListItem>**Show the passed id using <i>this.props.params</i> through the UI</ListItem></Appear>
+              <Appear><ListItem>Add initial routes (<code>/kanban</code> and <code>/about</code>)</ListItem></Appear>
+              <Appear><ListItem>*Add a nested <code>/kanban</code> route that accepts a <code>kanbanId</code> parameter</ListItem></Appear>
+              <Appear><ListItem>**Show the passed id using <code>this.props.params</code> through the UI</ListItem></Appear>
             </List>
           </Slide>
 
@@ -755,10 +755,10 @@ export default class Presentation extends React.Component {
             </Heading>
             <List>
               <Appear><ListItem>Development mode only - performance overhead</ListItem></Appear>
-              <Appear><ListItem>Measure with <i>Perf.start()</i> and <i>Perf.stop()</i></ListItem></Appear>
-              <Appear><ListItem>Get results with <i>Perf.getLastMeasurements()</i></ListItem></Appear>
-              <Appear><ListItem><i>Perf.print{'<Inclusive|Exclusive>'}(measurements)</i></ListItem></Appear>
-              <Appear><ListItem><i>Perf.print{'<'}<b>Wasted</b>|Operations{'>'}(measurements)</i></ListItem></Appear>
+              <Appear><ListItem>Measure with <code>Perf.start()</code> and <code>Perf.stop()</code></ListItem></Appear>
+              <Appear><ListItem>Get results with <code>Perf.getLastMeasurements()</code></ListItem></Appear>
+              <Appear><ListItem><code>Perf.print{'<Inclusive|Exclusive>'}(measurements)</code></ListItem></Appear>
+              <Appear><ListItem><code>Perf.print{'<'}<b>Wasted</b>|Operations{'>'}(measurements)</code></ListItem></Appear>
             </List>
           </Slide>
 
@@ -767,9 +767,9 @@ export default class Presentation extends React.Component {
               Chrome Tips
             </Heading>
             <List>
-              <Appear><ListItem>Note the flashing at the <i>Elements</i> tab</ListItem></Appear>
-              <Appear><ListItem>Keep an eye on the <i>Network</i> tab (latency)</ListItem></Appear>
-              <Appear><ListItem>Take a memory snapshot and analyze at the <i>Profiles</i> tab</ListItem></Appear>
+              <Appear><ListItem>Note the flashing at the <b>Elements</b> tab</ListItem></Appear>
+              <Appear><ListItem>Keep an eye on the <b>Network</b> tab (latency)</ListItem></Appear>
+              <Appear><ListItem>Take a memory snapshot and analyze at the <b>Profiles</b> tab</ListItem></Appear>
               <Appear><ListItem>Note different performance in development/production!</ListItem></Appear>
               <Appear><ListItem><Link href="https://developers.google.com/web/tools/chrome-devtools/profile/memory-problems/memory-diagnosis">Google tutorial</Link></ListItem></Appear>
             </List>
@@ -780,7 +780,7 @@ export default class Presentation extends React.Component {
               React Tips
             </Heading>
             <List>
-              <Appear><ListItem>Remember to set <b>process.env.NODE_ENV</b> to <b>production</b> when building</ListItem></Appear>
+              <Appear><ListItem>Remember to set <code>process.env.NODE_ENV</code> to <code>production</code> when building</ListItem></Appear>
               <Appear><ListItem>Consider using <Link href="https://www.npmjs.com/package/react-lite">react-lite</Link> or <Link href="https://www.npmjs.com/package/preact">preact</Link></ListItem></Appear>
               <Appear><ListItem>Leverage client caching (React, other deps) through vendor bundles (hash in name)</ListItem></Appear>
               <Appear><ListItem>Consider loading vendor dependencies through a CDN with a local fallback</ListItem></Appear>
@@ -820,7 +820,7 @@ export default class Presentation extends React.Component {
               <Appear><ListItem>React is particularly good for unit testing</ListItem></Appear>
               <Appear><ListItem>Example: Karma + Phantom + Mocha + <Link href="https://facebook.github.io/react/docs/test-utils.html">React Test Utilities</Link></ListItem></Appear>
               <Appear><ListItem><Link href="http://airbnb.io/enzyme/">Enzyme</Link> - Lighter alternative to React Test Utilities</ListItem></Appear>
-              <Appear><ListItem>Shallow rendering - No DOM, one level deep, no <i>refs</i></ListItem></Appear>
+              <Appear><ListItem>Shallow rendering - No DOM, one level deep, no <code>refs</code></ListItem></Appear>
               <Appear><ListItem>Property based testing - <Link href="https://jsverify.github.io/">JSVerify</Link></ListItem></Appear>
             </List>
           </Slide>
