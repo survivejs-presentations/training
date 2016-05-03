@@ -1004,6 +1004,12 @@ export default class Presentation extends React.Component {
             </Heading>
           </Slide>
 
+          <Slide transition={slideTransition} bgImage={images.troll} bgDarken={0.85}>
+            <Heading caps fit size={1} textColor="tertiary">
+              Check <Link href="http://survivejs.com/">survivejs.com</Link> for more!
+            </Heading>
+          </Slide>
+
           <Slide transition={slideTransition} bgColor="tertiary">
             <Heading size={1} caps fit textColor="primary">
               Made in Finland by
