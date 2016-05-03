@@ -652,10 +652,38 @@ export default class Presentation extends React.Component {
             </List>
           </Slide>
 
-          <Slide transition={slideTransition}>
-            <Heading size={2}>
-              <Link href="https://www.npmjs.com/package/redux-saga">redux-saga</Link>
+          <Slide transition={slideTransition} bgColor="primary">
+            <Heading size={4}>
+              <Link href="https://www.npmjs.com/package/redux-saga">redux-saga</Link> 1/2
             </Heading>
+            <CodePane
+              lang="jsx"
+              source={require("raw!../examples/redux_async_03.jsx")}
+              margin="20px auto"
+            />
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <Heading size={4}>
+              <Link href="https://www.npmjs.com/package/redux-saga">redux-saga</Link> 2/2
+            </Heading>
+            <CodePane
+              lang="jsx"
+              source={require("raw!../examples/redux_async_04.jsx")}
+              margin="20px auto"
+            />
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Heading size={1}>
+              <Link href="https://www.npmjs.com/package/redux-saga">redux-saga</Link> Recap
+            </Heading>
+            <List>
+              <Appear><ListItem>Split query to stages (request/success/failure) as with thunks</ListItem></Appear>
+              <Appear><ListItem>Instead of returning a thunk, operate with generators</ListItem></Appear>
+              <Appear><ListItem>Your browser might need a polyfill for generators to work</ListItem></Appear>
+              <Appear><ListItem>Easier to test due to the looser coupling by default</ListItem></Appear>
+            </List>
           </Slide>
 
           <Slide transition={slideTransition} bgColor="primary">
