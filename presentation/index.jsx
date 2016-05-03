@@ -520,9 +520,9 @@ export default class Presentation extends React.Component {
             <List>
               <Appear><ListItem>Modeled after spreadsheets</ListItem></Appear>
               <Appear><ListItem>Wraps data structures in observables</ListItem></Appear>
-              <Appear><ListItem>And then reacts to changes on <code>autorun</code></ListItem></Appear>
               <Appear><ListItem>Supports also <code>computed</code> data</ListItem></Appear>
               <Appear><ListItem>Mutable structures &#8594; Easier reference handling</ListItem></Appear>
+              <Appear><ListItem>Use <code>autorun</code> for side effects (printing, persistency)</ListItem></Appear>
               <Appear><ListItem>Light alternative to Redux</ListItem></Appear>
             </List>
           </Slide>
