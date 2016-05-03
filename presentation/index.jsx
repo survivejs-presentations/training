@@ -259,7 +259,7 @@ export default class Presentation extends React.Component {
 
           <Slide transition={slideTransition} bgColor="primary">
           <Heading size={4}>
-            Stateless Functions Destructured and Formatted for Readability
+            Stateless Functions Destructured and Formatted for Readability (parens!)
           </Heading>
             <CodePane
               lang="jsx"
