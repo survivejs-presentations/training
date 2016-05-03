@@ -863,6 +863,28 @@ export default class Presentation extends React.Component {
             </List>
           </Slide>
 
+          <Slide transition={slideTransition} bgColor="primary">
+            <Heading size={4}>
+              Testing with <Link href="https://facebook.github.io/react/docs/test-utils.html">React Test Utilities</Link>
+            </Heading>
+            <CodePane
+              lang="jsx"
+              source={require("raw!../examples/test_01.jsx")}
+              margin="20px auto"
+            />
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <Heading size={4}>
+              Testing with <Link href="https://facebook.github.io/react/docs/test-utils.html#shallow-rendering">Shallow Rendering</Link>
+            </Heading>
+            <CodePane
+              lang="jsx"
+              source={require("raw!../examples/test_02.jsx")}
+              margin="20px auto"
+            />
+          </Slide>
+
           <Slide transition={slideTransition}>
             <Heading size={1}>
               Exercises
