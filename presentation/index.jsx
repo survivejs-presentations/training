@@ -51,7 +51,7 @@ export default class Presentation extends React.Component {
         <Deck transition={slideTransition} transitionDuration={500} progress="bar">
           <Slide transition={slideTransition} bgColor="white">
             <Heading size={1} textColor="primary">
-              SurviveJS Training
+              SurviveJS React Training
             </Heading>
             <Image src={images.stepZero} margin="0px auto 40px" height="324px"/>
             <Heading size={4} textColor="primary">
