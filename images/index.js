@@ -17,7 +17,6 @@ export default _.mapValues({
   webpack: require("./webpack.png"),
   react: require("./react.png"),
   vdom: require("./vdom.png"),
-  kanban: require("./kanban.gif"),
   webpackGraph: require("./webpack_graph.png"),
   lifecycle: require("./lifecycle.png"),
   flux: require("./flux.png"),

@@ -1,14 +1,14 @@
 import React from 'react';
 
 export default React.createClass({
-  displayName: 'Note',
+  displayName: 'CatsSeen',
   render() {
-    const {task, ...props} = this.props;
+    const {amount, ...props} = this.props;
 
     return (
-      <div {...props}>
-        {task}
-      </div>
-    );
+      <h2 {...props}>
+        I've seen {amount} cats!
+      </h2>
+    )
   }
 });

@@ -1,11 +1,13 @@
 // Action types
-const noteTypes = {'CREATE_NOTE': 'CREATE_NOTE'};
+const amountTypes = {'SAW_CATS': 'SAW_CATS'};
 
 // Reducer
-function noteReducer(state, action) {
+function amountReducer(state, action) {
   switch (action.type) {
-    case noteTypes.CREATE_NOTE:
-      return [...state, action.note];
+    case amountTypes.SAW_CATS:
+      return {
+        amount: state.amount + action.amount
+      };
 
     default:
       return state;
@@ -13,13 +15,13 @@ function noteReducer(state, action) {
 }
 
 // Action creator
-function createNote(text) {
+function sawCats(amount) {
   return {
-    type: noteTypes.CREATE_NOTE,
-    note: {text}
+    type: amountTypes.SAW_CATS,
+    amount
   };
 }
 
-const store = noteReducer([], {});
-console.log(store); // []
-console.log(noteReducer(store, createNote('demo'))); // [{text: 'demo'}]
+const store = amountReducer({amount: 0}, {});
+console.log(store); // {amount: 0}
+console.log(amountReducer(store, sawCats(1))); // {amount: 1}

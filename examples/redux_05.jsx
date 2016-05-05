@@ -1,18 +1,14 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {editNote} from '../actions/notes';
+import {sawCats} from './actions';
 
-export default connect(({notes}) => {
-  notes
+@connect({amount} => ({
+  amount
 }), {
-  editNote
-})(Notes);
-
-// Stateless functions
-const Note = connect(({notes}) => {
-  notes
+  sawCats
+})
+export default connect({amount} => ({
+  amount
 }), {
-  editNote
-})(
-  ({task, ...props}) => <div {...props}>{task}</div>
-);
+  sawCats
+})(({amount, sawCats, ...props}) => ...);

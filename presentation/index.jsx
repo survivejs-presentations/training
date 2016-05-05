@@ -59,13 +59,47 @@ export default class Presentation extends React.Component {
             </Heading>
           </Slide>
 
-          <Slide transition={slideTransition} bgColor="black" notes="">
-            <Image src={images.kanban} margin="0px auto 40px" height="279px"/>
+          <Slide transition={slideTransition}>
+            <Heading size={1}>
+              About Author
+            </Heading>
+            <List>
+              <Appear><ListItem>Juho Vepsäläinen</ListItem></Appear>
+              <Appear><ListItem>Subcontractor gone author (est. 2015)</ListItem></Appear>
+              <Appear><ListItem>2k+ books sold so far, growing community</ListItem></Appear>
+              <Appear><ListItem>Academic background (C, Python, JavaScript)</ListItem></Appear>
+              <Appear><ListItem><Link href="http://www.nixtu.info/">nixtu.info</Link>, <Link href="http://survivejs.com/">SurviveJS</Link>, <Link href="http://jster.net/">JSter</Link></ListItem></Appear>
+              <Appear><ListItem><Link href="https://twitter.com/bebraw"><b>@bebraw</b></Link>, <Link href="https://twitter.com/survivejs"><b>@survivejs</b></Link>, <Link href="https://twitter.com/jsterlibs"><b>@jsterlibs</b></Link></ListItem></Appear>
+            </List>
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Heading size={1}>
+              Agenda 1/2
+            </Heading>
+            <List>
+              <Appear><ListItem>Quick intro to <Link href="https://babeljs.io/">Babel</Link> and <Link href="https://webpack.github.io/">Webpack</Link></ListItem></Appear>
+              <Appear><ListItem>Basics of <Link href="https://facebook.github.io/react/">React</Link> including component definitions in greater detail</ListItem></Appear>
+              <Appear><ListItem>Typing with React and why it's important</ListItem></Appear>
+              <Appear><ListItem>Data management in React with <Link href="http://redux.js.org/">Redux</Link> and <Link href="https://mobxjs.github.io/mobx/">MobX</Link> including asynchronous behavior</ListItem></Appear>
+            </List>
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Heading size={1}>
+              Agenda 2/2
+            </Heading>
+            <List>
+              <Appear><ListItem>Routing with React</ListItem></Appear>
+              <Appear><ListItem>Improving performance of a React application</ListItem></Appear>
+              <Appear><ListItem>Testing React</ListItem></Appear>
+              <Appear><ListItem>Structuring React applications</ListItem></Appear>
+            </List>
           </Slide>
 
           <Slide transition={slideTransition} bgColor="white">
             <Heading size={2} textColor="primary">
-              Babel and Webpack 101
+              <Link href="https://babeljs.io/">Babel</Link> and <Link href="https://webpack.github.io/">Webpack</Link> 101
             </Heading>
             <Image src={images.stepOne} margin="0px auto 40px" height="524px"/>
           </Slide>
@@ -78,7 +112,7 @@ export default class Presentation extends React.Component {
 
           <Slide transition={slideTransition} bgImage={images.babelTower} bgDarken={0.85}>
             <Heading size={1} textColor="primary">
-              Babel
+              <Link href="https://babeljs.io/">Babel</Link>
             </Heading>
             <List textColor="primary">
               <Appear><ListItem>ES2015+ and custom features</ListItem></Appear>
@@ -104,7 +138,7 @@ export default class Presentation extends React.Component {
 
           <Slide transition={slideTransition}>
             <Heading size={1}>
-              Webpack
+              <Link href="https://webpack.github.io/">Webpack</Link>
             </Heading>
             <List>
               <Appear><ListItem>Application as a dependency graph</ListItem></Appear>
@@ -159,7 +193,7 @@ export default class Presentation extends React.Component {
 
           <Slide transition={slideTransition}>
             <Heading size={1}>
-              React Philosophy
+              <Link href="https://facebook.github.io/react/">React</Link> Philosophy
             </Heading>
             <List>
               <Appear><ListItem>Model your application as a component hierarchy</ListItem></Appear>
@@ -211,9 +245,10 @@ export default class Presentation extends React.Component {
               Exercises
             </Heading>
             <List>
-              <Appear><ListItem>Add state to your application constructor through <code>this.state = ...</code>. Remember to <code>bind</code>.</ListItem></Appear>
-              <Appear><ListItem>Add a button and alter the count <code>onClick</code> through <code>setState</code>. Why is <code>setState</code> needed?</ListItem></Appear>
-              <Appear><ListItem>*Add a custom button for resetting the state and attach logic</ListItem></Appear>
+              <Appear><ListItem>Copy the cat counter example to <Link href="http://www.webpackbin.com/">WebpackBin</Link></ListItem></Appear>
+              <Appear><ListItem>Make it possible to add two cats at once</ListItem></Appear>
+              <Appear><ListItem>*Add multiple options. Hint: <code>[1, 2, 4].map(...)</code>. Look up React's <Link href="https://facebook.github.io/react/docs/reconciliation.html"><code>key</code></Link>. Why is it needed?</ListItem></Appear>
+              <Appear><ListItem>**Add a reset button to restore the count to zero</ListItem></Appear>
             </List>
           </Slide>
 
@@ -292,7 +327,7 @@ export default class Presentation extends React.Component {
 
           <Slide transition={slideTransition} bgColor="primary">
             <Heading size={4}>
-              ES6 Class with State
+              ES6 Class with Manual Binding
             </Heading>
             <CodePane
               lang="jsx"
@@ -303,7 +338,7 @@ export default class Presentation extends React.Component {
 
           <Slide transition={slideTransition} bgColor="primary">
             <Heading size={4}>
-              ES6 Class Manual Binding
+              ES6 Class with a Property Initializer
             </Heading>
             <CodePane
               lang="jsx"
@@ -335,11 +370,10 @@ export default class Presentation extends React.Component {
               Exercises
             </Heading>
             <List>
-              <Appear><ListItem>Extract a <b>Notes</b> component from App</ListItem></Appear>
-              <Appear><ListItem>Implement a callback (<code>onClick</code>) to capture when a <b>Note</b> is clicked</ListItem></Appear>
-              <Appear><ListItem>Wire the callback to <b>App</b> (hint: add <code>props</code> to <b>Notes</b> and <b>Note</b>)</ListItem></Appear>
-              <Appear><ListItem>Pass <b>Note</b> id to the callback so we can tell them apart (hint: <code>bind</code> at <b>Notes</b>)</ListItem></Appear>
+              <Appear><ListItem>Split the cat counter into multiple components like in the last example</ListItem></Appear>
               <Appear><ListItem>*Implement a <code>lifecycle method</code> and see when it gets triggered</ListItem></Appear>
+              <Appear><ListItem>**Implement <b>App</b> that contains multiple <b>CatCounter</b>s</ListItem></Appear>
+              <Appear><ListItem>***Push counter state management to <b>App</b></ListItem></Appear>
             </List>
           </Slide>
 
@@ -424,7 +458,7 @@ export default class Presentation extends React.Component {
               Exercises
             </Heading>
             <List>
-              <Appear><ListItem>Annotate <b>Notes</b> with <code>propTypes</code></ListItem></Appear>
+              <Appear><ListItem>Annotate <b>SawCat</b> with <code>propTypes</code></ListItem></Appear>
               <Appear><ListItem>Look up <code>React.PropTypes.shape</code> and see how it works</ListItem></Appear>
               <Appear><ListItem>*Test <Link href="http://tryflow.org/">tryflow.org</Link></ListItem></Appear>
             </List>
@@ -465,26 +499,10 @@ export default class Presentation extends React.Component {
             <Image src={images.flux} margin="40px auto" height="324px" />
           </Slide>
 
-          <Slide transition={slideTransition} bgColor="primary">
-            <Heading size={4}>
-              Minimal <Link href="http://redux.js.org/">Redux</Link>
+          <Slide transition={slideTransition}>
+            <Heading size={2}>
+              Redux
             </Heading>
-            <CodePane
-              lang="jsx"
-              source={require("raw!../examples/redux_01.jsx")}
-              margin="20px auto"
-            />
-          </Slide>
-
-          <Slide transition={slideTransition} bgColor="primary">
-            <Heading size={4}>
-              <Link href="http://redux.js.org/">Redux</Link> with Store
-            </Heading>
-            <CodePane
-              lang="jsx"
-              source={require("raw!../examples/redux_02.jsx")}
-              margin="20px auto"
-            />
           </Slide>
 
           <Slide transition={slideTransition}>
@@ -504,34 +522,24 @@ export default class Presentation extends React.Component {
 
           <Slide transition={slideTransition} bgColor="primary">
             <Heading size={4}>
-              Minimal <Link href="https://mobxjs.github.io/mobx/">MobX</Link>
+              Minimal <Link href="http://redux.js.org/">Redux</Link>
             </Heading>
             <CodePane
               lang="jsx"
-              source={require("raw!../examples/mobx_01.jsx")}
+              source={require("raw!../examples/redux_01.jsx")}
               margin="20px auto"
             />
           </Slide>
 
-          <Slide transition={slideTransition}>
-            <Heading size={1}>
-              MobX Briefly
-            </Heading>
-            <List>
-              <Appear><ListItem>Modeled after spreadsheets</ListItem></Appear>
-              <Appear><ListItem>Wraps data structures in observables</ListItem></Appear>
-              <Appear><ListItem>Supports also <code>computed</code> data</ListItem></Appear>
-              <Appear><ListItem>Mutable structures &#8594; Easier reference handling</ListItem></Appear>
-              <Appear><ListItem>Use <code>autorun</code> for side effects (printing, persistency)</ListItem></Appear>
-              <Appear><ListItem>Light alternative to Redux</ListItem></Appear>
-            </List>
-          </Slide>
-
           <Slide transition={slideTransition} bgColor="primary">
-            <Heading size={2}>
-              Connecting Data
+            <Heading size={4}>
+              <Link href="http://redux.js.org/">Redux</Link> with a Store
             </Heading>
-            <Image src={images.vdom} margin="40px auto" height="324px" />
+            <CodePane
+              lang="jsx"
+              source={require("raw!../examples/redux_02.jsx")}
+              margin="20px auto"
+            />
           </Slide>
 
           <Slide transition={slideTransition} bgColor="primary">
@@ -578,6 +586,37 @@ export default class Presentation extends React.Component {
             </List>
           </Slide>
 
+          <Slide transition={slideTransition}>
+            <Heading size={2}>
+              MobX
+            </Heading>
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Heading size={1}>
+              MobX Briefly
+            </Heading>
+            <List>
+              <Appear><ListItem>Modeled after spreadsheets</ListItem></Appear>
+              <Appear><ListItem>Wraps data structures in observables</ListItem></Appear>
+              <Appear><ListItem>Supports also <code>computed</code> data</ListItem></Appear>
+              <Appear><ListItem>Mutable structures &#8594; Easier reference handling</ListItem></Appear>
+              <Appear><ListItem>Use <code>autorun</code> for side effects (printing, persistency)</ListItem></Appear>
+              <Appear><ListItem>Light alternative to Redux</ListItem></Appear>
+            </List>
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <Heading size={4}>
+              Minimal <Link href="https://mobxjs.github.io/mobx/">MobX</Link>
+            </Heading>
+            <CodePane
+              lang="jsx"
+              source={require("raw!../examples/mobx_01.jsx")}
+              margin="20px auto"
+            />
+          </Slide>
+
           <Slide transition={slideTransition} bgColor="primary">
             <Heading size={4}>
               Connecting Using <Link href="https://www.npmjs.com/package/mobx-react">mobx-react</Link>
@@ -605,8 +644,8 @@ export default class Presentation extends React.Component {
               Exercises
             </Heading>
             <List>
-              <Appear><ListItem>Push application <code>state</code> (notes) to Redux</ListItem></Appear>
-              <Appear><ListItem>*Add another data concept (<b>Lane</b>)</ListItem></Appear>
+              <Appear><ListItem>Push application <code>state</code> (amount) to Redux</ListItem></Appear>
+              <Appear><ListItem>*Add another amount</ListItem></Appear>
               <Appear><ListItem>**Implement a MobX variant</ListItem></Appear>
             </List>
           </Slide>
@@ -762,10 +801,10 @@ export default class Presentation extends React.Component {
               Exercises
             </Heading>
             <List>
-              <Appear><ListItem>Set up <Link to="https://github.com/survivejs/react-boilerplate">react-boilerplate</Link></ListItem></Appear>
-              <Appear><ListItem>Include react-router to the boilerplate project through <b>npm i react-router -D</b></ListItem></Appear>
-              <Appear><ListItem>Add initial routes (<code>/kanban</code> and <code>/about</code>)</ListItem></Appear>
-              <Appear><ListItem>*Add a nested <code>/kanban</code> route that accepts a <code>kanbanId</code> parameter</ListItem></Appear>
+              <Appear><ListItem>Set up <Link to="https://github.com/survivejs/react-boilerplate">react-boilerplate</Link> and move the counter application there</ListItem></Appear>
+              <Appear><ListItem>Include react-router to the boilerplate project through <b>npm i react-router -S</b></ListItem></Appear>
+              <Appear><ListItem>Add initial routes (<code>/counters</code> and <code>/about</code>)</ListItem></Appear>
+              <Appear><ListItem>*Add a nested <code>/kanban</code> route that accepts a <code>counterId</code> parameter</ListItem></Appear>
               <Appear><ListItem>**Show the passed id using <code>this.props.params</code> through the UI</ListItem></Appear>
             </List>
           </Slide>
@@ -885,14 +924,25 @@ export default class Presentation extends React.Component {
             />
           </Slide>
 
+          <Slide transition={slideTransition} bgColor="primary">
+            <Heading size={4}>
+              Testing with <Link href="http://airbnb.io/enzyme/">Enzyme</Link>
+            </Heading>
+            <CodePane
+              lang="jsx"
+              source={require("raw!../examples/test_03.jsx")}
+              margin="20px auto"
+            />
+          </Slide>
+
           <Slide transition={slideTransition}>
             <Heading size={1}>
               Exercises
             </Heading>
             <List>
               <Appear><ListItem>Write a naïve <Link href="https://mochajs.org/">Mocha</Link> test</ListItem></Appear>
-              <Appear><ListItem>Assert that <b>Notes</b> renders using <Link href="https://facebook.github.io/react/docs/test-utils.html">React Test Utilities</Link></ListItem></Appear>
-              <Appear><ListItem>*Assert that <b>Notes</b> renders using <Link href="http://airbnb.io/enzyme/">Enzyme</Link></ListItem></Appear>
+              <Appear><ListItem>Assert that <b>CatCounter</b> renders using <Link href="https://facebook.github.io/react/docs/test-utils.html">React Test Utilities</Link></ListItem></Appear>
+              <Appear><ListItem>*Assert that <b>CatCounter</b> renders using <Link href="http://airbnb.io/enzyme/">Enzyme</Link></ListItem></Appear>
               <Appear><ListItem>**Write a property based test with <Link href="https://jsverify.github.io/">JSVerify</Link></ListItem></Appear>
             </List>
           </Slide>
@@ -920,10 +970,8 @@ export default class Presentation extends React.Component {
             <List>
               <Appear><ListItem>index.jsx</ListItem></Appear>
               <Appear><ListItem>App.jsx</ListItem></Appear>
-              <Appear><ListItem>Lanes.jsx</ListItem></Appear>
-              <Appear><ListItem>Lane.jsx</ListItem></Appear>
-              <Appear><ListItem>Notes.jsx</ListItem></Appear>
-              <Appear><ListItem>Note.jsx</ListItem></Appear>
+              <Appear><ListItem>CatCounter.jsx</ListItem></Appear>
+              <Appear><ListItem>SawCat.jsx</ListItem></Appear>
             </List>
           </Slide>
 
@@ -934,12 +982,10 @@ export default class Presentation extends React.Component {
             <List>
               <Appear><ListItem>index.jsx</ListItem></Appear>
               <Appear><ListItem>App.jsx</ListItem></Appear>
-              <Appear><ListItem>lanes/index.js</ListItem></Appear>
-              <Appear><ListItem>lanes/Lanes.jsx</ListItem></Appear>
-              <Appear><ListItem>lanes/Lane.jsx</ListItem></Appear>
-              <Appear><ListItem>notes/index.js</ListItem></Appear>
-              <Appear><ListItem>notes/Notes.jsx</ListItem></Appear>
-              <Appear><ListItem>notes/Note.jsx</ListItem></Appear>
+              <Appear><ListItem>cats/index.js</ListItem></Appear>
+              <Appear><ListItem>cats/Counter.jsx</ListItem></Appear>
+              <Appear><ListItem>sharks/index.js</ListItem></Appear>
+              <Appear><ListItem>sharks/Counter.jsx</ListItem></Appear>
             </List>
           </Slide>
 
@@ -952,24 +998,8 @@ export default class Presentation extends React.Component {
               <Appear><ListItem>App.jsx</ListItem></Appear>
               <Appear><ListItem>Routes.jsx</ListItem></Appear>
               <Appear><ListItem>home/</ListItem></Appear>
-              <Appear><ListItem>kanban/</ListItem></Appear>
+              <Appear><ListItem>counters/</ListItem></Appear>
               <Appear><ListItem>about/</ListItem></Appear>
-            </List>
-          </Slide>
-
-          <Slide transition={slideTransition}>
-            <Heading size={1}>
-              Model Screens
-            </Heading>
-            <List>
-              <Appear><ListItem>index.jsx</ListItem></Appear>
-              <Appear><ListItem>App.jsx</ListItem></Appear>
-              <Appear><ListItem>Routes.jsx</ListItem></Appear>
-              <Appear><ListItem>screens/</ListItem></Appear>
-              <Appear><ListItem>screens/index.js</ListItem></Appear>
-              <Appear><ListItem>screens/home/</ListItem></Appear>
-              <Appear><ListItem>screens/kanban/</ListItem></Appear>
-              <Appear><ListItem>screens/about/</ListItem></Appear>
             </List>
           </Slide>
 
@@ -992,19 +1022,19 @@ export default class Presentation extends React.Component {
               Exercises
             </Heading>
             <List>
-              <Appear><ListItem>Design a structure for a kanban application without routing</ListItem></Appear>
-              <Appear><ListItem>Design a structure for a kanban application with routing</ListItem></Appear>
+              <Appear><ListItem>Design a structure for counter application without routing</ListItem></Appear>
+              <Appear><ListItem>Design a structure for a counter application with routing</ListItem></Appear>
               <Appear><ListItem>*Design multiple structures for an arbitrary application. Consider pros/cons.</ListItem></Appear>
             </List>
           </Slide>
 
-          <Slide transition={slideTransition} bgImage={images.troll} bgDarken={0.85}>
+          <Slide transition={slideTransition}>
             <Heading caps fit size={1} textColor="tertiary">
               Questions?
             </Heading>
           </Slide>
 
-          <Slide transition={slideTransition} bgImage={images.troll} bgDarken={0.85}>
+          <Slide transition={slideTransition}>
             <Heading caps fit size={1} textColor="tertiary">
               Check <Link href="http://survivejs.com/">survivejs.com</Link> for more!
             </Heading>

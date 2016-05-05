@@ -1,13 +1,13 @@
 import React from 'react';
 
-export default class Note extends React.Component {
+export default class CatsSeen extends React.Component {
   render() {
-    const {task, ...props} = this.props;
+    const {amount, ...props} = this.props;
 
     return (
-      <div {...props}>
-        {task}
-      </div>
-    );
+      <h2 {...props}>
+        I've seen {amount} cats!
+      </h2>
+    )
   }
 }

@@ -1,9 +1,8 @@
 import React from 'react';
 
-class Note extends React.Component {
-  // Property initializers (experimental, stage 1)
+export default class SawCat extends React.Component {
   static propTypes = {
-    task: string,
+    count: number,
     onClick?: Function
   };
   static defaultProps = {
@@ -13,5 +12,3 @@ class Note extends React.Component {
     ...
   }
 }
-
-export default Note;

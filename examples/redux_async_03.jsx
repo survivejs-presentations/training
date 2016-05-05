@@ -2,17 +2,17 @@ import { takeEvery } from 'redux-saga';
 import { call, put } from 'redux-saga/effects';
 
 // Action creator
-function* fetchNotes(action) {
+function* fetchAmount(action) {
    try {
-      const notes = yield call(Api.fetchNotes);
+      const amount = yield call(Api.fetchAmount);
 
-      yield put({ type: noteTypes.FETCH_NOTES_SUCCESS, notes });
-   } catch (eror) {
-      yield put({type: noteTypes.FETCH_NOTES_FAILURE, error });
+      yield put({ type: amountTypes.FETCH_AMOUNT_SUCCESS, amount });
+   } catch (error) {
+      yield put({type: amountTypes.FETCH_AMOUNT_FAILURE, error });
    }
 }
 
 // Saga, allows concurrent queries with takeEvery
-function* notesSaga() {
-  yield* takeEvery(noteTypes.FETCH_NOTES_REQUEST, fetchNotes);
+function* amountSaga() {
+  yield* takeEvery(amountTypes.FETCH_AMOUNT_REQUEST, fetchAmount);
 }

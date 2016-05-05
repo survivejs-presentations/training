@@ -1,5 +1,4 @@
 import React from "react";
-import {Heading} from "spectacle";
 
 export default class CatCounter extends React.Component {
   constructor(props) {
@@ -11,9 +10,7 @@ export default class CatCounter extends React.Component {
   render() {
     return (
       <div>
-        <Heading size={5} textColor="black">
-          I've seen {this.state.count} cats
-        </Heading>
+        <h2>I've seen {this.state.count} cats</h2>
         <button type="button" className="cat-button" onClick={this.sawCat}>
           Saw a Cat
         </button>

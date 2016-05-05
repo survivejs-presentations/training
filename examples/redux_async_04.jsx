@@ -13,9 +13,9 @@ const store = createStore(
 )
 
 // Connect saga with middleware
-sagaMiddleware.run(notesSaga);
+sagaMiddleware.run(amountSaga);
 
 ...
 
 // Dispatch somewhere
-store.dispatch(fetchNotes()).then(() => console.log('done'));
+store.dispatch(fetchAmount()).then(() => console.log('done'));

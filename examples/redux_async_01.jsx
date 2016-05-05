@@ -1,23 +1,31 @@
-import {createStore, applyMiddleware} from 'redux';
-import fetch from 'isomorphic-fetch';
-import thunk from 'redux-thunk';
-
-const RESOURCE_URL = '...';
-
 // Action types
-const noteTypes = {
-  'FETCH_NOTES_REQUEST': 'FETCH_NOTES_REQUEST',
-  'FETCH_NOTES_SUCCESS': 'FETCH_NOTES_SUCCESS',
-  'FETCH_NOTES_FAILURE': 'FETCH_NOTES_FAILURE'
+const amountTypes = {
+  'FETCH_AMOUNT_REQUEST': 'FETCH_AMOUNT_REQUEST',
+  'FETCH_AMOUNT_SUCCESS': 'FETCH_AMOUNT_SUCCESS',
+  'FETCH_AMOUNT_FAILURE': 'FETCH_AMOUNT_FAILURE'
 };
 
 // Reducer
-function noteReducer(state, action) {
+function amountReducer(state, action) {
   switch (action.type) {
-    case noteTypes.FETCH_NOTES_SUCCESS:
-      return action.notes;
+    case amountTypes.FETCH_AMOUNT_SUCCESS:
+      return {
+        amount: action.amount
+      };
+
+    // Handle request, failure too
 
     default:
       return state;
   }
 }
+
+...
+
+import {createStore, applyMiddleware} from 'redux';
+
+// Attach middleware when initializing
+const store = createStore(amountReducer, [], applyMiddleware(thunk));
+
+// Dispatch somewhere
+store.dispatch(fetchAmount()).then(() => console.log('done'));

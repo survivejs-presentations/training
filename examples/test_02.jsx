@@ -3,15 +3,15 @@ import {
   createRenderer
 } from 'react-addons-test-utils';
 import assert from 'assert';
-import Note from '../app/components/Note.jsx';
+import CatsSeen from '../app/CatsSeen.jsx';
 
-describe('Note', () => {
+describe('CatsSeen', () => {
   it('renders children', () => {
-    const test = 'test';
+    const test = 5;
     const renderer = createRenderer();
 
     renderer.render(
-      <Note>{test}</Note>
+      <CatsSeen>{test}</CatsSeen>
     );
 
     const result = renderer.getRenderOutput();

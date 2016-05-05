@@ -1,16 +1,14 @@
 import React from 'react';
 
-class Note extends React.Component {
-  render() {
-    ...
-  }
-}
-Note.propTypes = {
-  task: React.PropTypes.string.isRequired,
+const SawCat = ({count, onClick, ...props}) => (
+  ...
+);
+SawCat.propTypes = {
+  count: React.PropTypes.number.isRequired,
   onClick: React.PropTypes.func
 };
-Note.defaultProps = {
+SawCat.defaultProps = {
   onClick: () => {}
 };
 
-export default Note;
+export default SawCat;

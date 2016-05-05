@@ -1,25 +1,24 @@
-...
+import React from 'react';
+import CatsSeen from './CatsSeen';
+import SawCat from './SawCat';
 
-export default class App extends React.Component {
+export default class CatCounter extends React.Component {
   constructor(props) {
-    ...
+    super(props);
+
+    this.state = { count: 0 };
   }
   render() {
     return (
       <div>
-        <input type="text" ref="task" />
-        <button onClick={this.addNote}>+</button>
-
-        ...
+        <input type="text" ref="amount" />
+        <CatsSeen amount={this.state.count} />
+        <SawCat className="cat-button"
+          count={this.state.count} onClick={this.sawCats} />
       </div>
     );
   }
-  addNote() {
-    this.setState({
-      notes: this.state.notes.concat([{
-        id: uuid(),
-        task: this.refs.task
-      }])
-    });
-  }
+  sawCats(count) => {
+    this.setState({ count: count + parseInt(this.refs.amount, 10) });
+  };
 }

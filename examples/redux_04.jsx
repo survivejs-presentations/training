@@ -1,14 +1,21 @@
 import React from 'react';
 import {connect} from 'react-redux';
-import {editNote} from '../actions/notes';
+import {sawCats} from './actions';
 
-@connect(state => (({notes}) => {
-  notes
+@connect({amount} => ({
+  amount
 }), {
-  editNote
+  sawCats
 })
-class Notes extends React.Component {
-  ... // props.notes, props.editNote
+export default class CatCounter extends React.Component {
+  render() {
+    ...
+  }
 }
 
-export default Notes;
+// Alternative
+export default connect({amount} => ({
+  amount
+}), {
+  sawCats
+})(CatCounter);

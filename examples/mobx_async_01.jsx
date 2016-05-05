@@ -3,14 +3,14 @@ import {observable, autorun} from 'mobx';
 
 const RESOURCE_URL = '...';
 
-var app = observable({ isLoading: false, notes: [] });
+const cats = observable({ amount: 0, isLoading: false });
 
-autorun(() => console.log(app));
+autorun(() => console.log(cats));
 
-fetchNotes();
+fetchAmount();
 
-function fetchNotes() {
-  app.isLoading = true;
+function fetchAmount() {
+  cats.isLoading = true;
 
   return fetch(RESOURCE_URL).then(res => {
     if(res.ok) {
@@ -19,9 +19,9 @@ function fetchNotes() {
 
     throw(res.statusText);
   }).then(body => {
-    app.isLoading = false;
-    app.notes = body;
+    cats.isLoading = false;
+    cats.amount = body;
   }).catch(error => {
-    app.isLoading = false;
+    cats.isLoading = false;
   });
 }

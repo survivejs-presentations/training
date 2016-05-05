@@ -1,24 +1,24 @@
 import React from 'react';
-import uuid from 'random-uuid';
-import Note from './Note';
+import CatsSeen from './CatsSeen';
+import SawCat from './SawCat';
 
-export default class App extends React.Component {
+export default class CatCounter extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = {
-      notes: [ { id: uuid(), task: 'Learn React' } ]
-    };
+    this.state = { count: 0 };
+    this.sawCats = this.sawCats.bind(this);
   }
   render() {
     return (
       <div>
-        <button onClick={this.addNote}>+</button>
-
-        <ul>{this.state.notes.map(note =>
-          <li><Note key={note.id} task={note.task} /></li>
-        )}</ul>
+        <CatsSeen amount={this.state.count} />
+        <SawCat className="cat-button"
+          count={this.state.count} onClick={this.sawCats} />
       </div>
     );
+  }
+  sawCats(count) {
+    this.setState({ count: count + 1 });
   }
 }

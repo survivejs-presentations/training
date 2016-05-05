@@ -1,10 +1,12 @@
 import {observable, autorun} from 'mobx';
 
-var notes = observable([]);
+const cats = observable({
+  amount: 0
+});
 
-autorun(() => console.log(notes));
+autorun(() => console.log(cats));
 
-notes.push({text: 'demo'});
+cats.amount++;
 
-// []
-// [{text: 'demo'}]
+// {amount: 0}
+// {amount: 1}

@@ -1,20 +1,21 @@
 import {createStore} from 'redux';
 
 // Action types
-const noteTypes = {'CREATE_NOTE': 'CREATE_NOTE'};
+const amountTypes = {'SAW_CATS': 'SAW_CATS'};
 
 // Reducer
-function noteReducer(state=[], action) {
+function amountReducer(state, action) {
   ...
 }
 
 // Action creator
-function createNote(text) {
+function sawCats(amount) {
   ...
 }
 
-const store = createStore(noteReducer);
+// Set up a store and listen to it
+const store = createStore(amountReducer);
 
 store.subscribe(state => console.log(store.getState()));
 
-store.dispatch(createNote('demo'));
+store.dispatch(sawCats(1));

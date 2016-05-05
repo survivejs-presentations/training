@@ -1,7 +1,12 @@
+import fetch from 'isomorphic-fetch';
+import thunk from 'redux-thunk';
+
+const RESOURCE_URL = '...';
+
 // Action creator
-function fetchNotes() {
+function fetchAmount() {
   return (dispatch, getState) => {
-    dispatch({ type: noteTypes.FETCH_NOTES_REQUEST });
+    dispatch({ type: amountTypes.FETCH_AMOUNT_REQUEST });
 
     return fetch(RESOURCE_URL).then(res => {
       if(res.ok) {
@@ -10,15 +15,9 @@ function fetchNotes() {
 
       throw(res.statusText);
     }).then(body => {
-      dispatch({ type: noteTypes.FETCH_NOTES_SUCCESS, notes: body });
+      dispatch({ type: amountTypes.FETCH_AMOUNT_SUCCESS, amount: body });
     }).catch(error => {
-      dispatch({ type: noteTypes.FETCH_NOTES_FAILURE, error });
+      dispatch({ type: amountTypes.FETCH_AMOUNT_FAILURE, error });
     });
   };
 }
-
-const store = createStore(noteReducer, [], applyMiddleware(thunk));
-
-store.subscribe(state => console.log(JSON.stringify(store.getState())));
-
-store.dispatch(fetchNotes()).then(() => console.log('done'));
