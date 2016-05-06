@@ -804,7 +804,7 @@ export default class Presentation extends React.Component {
               <Appear><ListItem>Set up <Link to="https://github.com/survivejs/react-boilerplate">react-boilerplate</Link> and move the counter application there</ListItem></Appear>
               <Appear><ListItem>Include react-router to the boilerplate project through <b>npm i react-router -S</b></ListItem></Appear>
               <Appear><ListItem>Add initial routes (<code>/counters</code> and <code>/about</code>)</ListItem></Appear>
-              <Appear><ListItem>*Add a nested <code>/kanban</code> route that accepts a <code>counterId</code> parameter</ListItem></Appear>
+              <Appear><ListItem>*Add a nested <code>/counters</code> route that accepts a <code>counterId</code> parameter</ListItem></Appear>
               <Appear><ListItem>**Show the passed id using <code>this.props.params</code> through the UI</ListItem></Appear>
             </List>
           </Slide>
