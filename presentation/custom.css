@@ -25,3 +25,8 @@ button svg {
   background-color: #6eedf8;
   cursor: pointer;
 }
+
+pre {
+  overflow: auto;
+  max-height: 500px;
+}
