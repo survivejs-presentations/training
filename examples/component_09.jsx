@@ -6,19 +6,19 @@ export default class CatCounter extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = { count: 0 };
+    this.state = { amount: 0 };
   }
   render() {
     return (
       <div>
         <input type="text" ref="amount" />
-        <CatsSeen amount={this.state.count} />
+        <CatsSeen amount={this.state.amount} />
         <SawCat className="cat-button"
-          count={this.state.count} onClick={this.sawCats} />
+          amount={this.state.amount} onClick={this.sawCats} />
       </div>
     );
   }
-  sawCats(count) => {
-    this.setState({ count: count + parseInt(this.refs.amount, 10) });
+  sawCats(amount) => {
+    this.setState({ amount: amount + parseInt(this.refs.amount, 10) });
   };
 }

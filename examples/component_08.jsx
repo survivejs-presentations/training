@@ -6,19 +6,19 @@ export default class CatCounter extends React.Component {
   constructor(props) {
     super(props);
 
-    this.state = { count: 0 };
+    this.state = { amount: 0 };
   }
   render() {
     return (
       <div>
-        <CatsSeen amount={this.state.count} />
+        <CatsSeen amount={this.state.amount} />
         <SawCat className="cat-button"
-          count={this.state.count} onClick={this.sawCats} />
+          amount={this.state.amount} onClick={this.sawCats} />
       </div>
     );
   }
   // Experimental syntax - property initializer
-  sawCats(count) => {
-    this.setState({ count: count + 1 });
+  sawCats(amount) => {
+    this.setState({ amount: amount + 1 });
   };
 }

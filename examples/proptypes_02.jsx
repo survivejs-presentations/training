@@ -2,7 +2,7 @@ import React from 'react';
 
 export default class SawCat extends React.Component {
   static propTypes = {
-    count: React.PropTypes.number.isRequired,
+    amount: React.PropTypes.number.isRequired,
     onClick: React.PropTypes.func
   };
   static defaultProps = {
