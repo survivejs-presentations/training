@@ -11,13 +11,18 @@ export default class CatCounter extends React.Component {
     return (
       <div>
         <h2>I've seen {this.state.amount} cats</h2>
-        <button type="button" className="cat-button" onClick={this.sawCat}>
-          Saw a Cat
+        <button type="button" className="cat-button"
+          onClick={this.sawCat.bind(null, 1)}>
+          Saw a cat
+        </button>
+        <button type="button" className="cat-button"
+          onClick={this.sawCat.bind(null, 2)}>
+          Saw two cats
         </button>
       </div>
     );
   }
-  sawCat() {
-    this.setState({ amount: this.state.amount + 1 });
+  sawCat(amount) {
+    this.setState({ amount: this.state.amount + amount });
   }
 }
