@@ -235,7 +235,7 @@ export default class Presentation extends React.Component {
           <Slide transition={slideTransition} bgColor="primary">
             <CodePane
               lang="jsx"
-              source={require("raw!../loaders/content.js!./counter.jsx")}
+              source={require("raw!content!./counter.jsx")}
               margin="20px auto"
             />
           </Slide>

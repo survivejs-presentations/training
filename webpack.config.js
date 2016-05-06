@@ -26,6 +26,11 @@ module.exports = {
   resolve: {
     extensions: ['', '.jsx', '.js']
   },
+  resolveLoader: {
+    alias: {
+      content: path.join(__dirname, 'loaders', 'content')
+    }
+  },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NoErrorsPlugin()
