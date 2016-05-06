@@ -31,6 +31,7 @@ import Counter from "./counter.jsx";
 import Counter101 from "./solutions/101.jsx";
 import Counter1012 from "./solutions/101_2.jsx";
 import Counter202 from "./solutions/202.jsx";
+import Counter303 from "./solutions/303.jsx";
 
 import images from '../images';
 
@@ -1113,6 +1114,27 @@ export default class Presentation extends React.Component {
             <CodePane
               lang="jsx"
               source={require("raw!content!./solutions/202.jsx")}
+              margin="20px auto"
+            />
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Heading size={2}>
+              React 303
+            </Heading>
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <Heading size={1}>
+              Cat Counter
+            </Heading>
+            <Counter303 />
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <CodePane
+              lang="jsx"
+              source={require("raw!content!./solutions/303.jsx")}
               margin="20px auto"
             />
           </Slide>
