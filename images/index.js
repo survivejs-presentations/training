@@ -20,5 +20,8 @@ export default _.mapValues({
   webpackGraph: require("./webpack_graph.png"),
   lifecycle: require("./lifecycle.png"),
   flux: require("./flux.png"),
-  testingPyramid: require("./testing_pyramid.png")
+  testingPyramid: require("./testing_pyramid.png"),
+  lint: require("./lint.jpg"),
+  cowboy: require("./cowboy.jpg"),
+  npmShape: require("./npm_shape.png")
 }, (v) => v.replace("/", ""));

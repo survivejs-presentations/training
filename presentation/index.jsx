@@ -83,10 +83,10 @@ export default class Presentation extends React.Component {
               Agenda 1/2
             </Heading>
             <List>
+              <Appear><ListItem>Quick intro JavaScript</ListItem></Appear>
               <Appear><ListItem>Quick intro to <Link href="https://babeljs.io/">Babel</Link> and <Link href="https://webpack.github.io/">Webpack</Link></ListItem></Appear>
               <Appear><ListItem>Basics of <Link href="https://facebook.github.io/react/">React</Link> including component definitions in greater detail</ListItem></Appear>
               <Appear><ListItem>Typing with React and why it's important</ListItem></Appear>
-              <Appear><ListItem>Data management in React with <Link href="http://redux.js.org/">Redux</Link> and <Link href="https://mobxjs.github.io/mobx/">MobX</Link> including asynchronous behavior</ListItem></Appear>
             </List>
           </Slide>
 
@@ -95,10 +95,90 @@ export default class Presentation extends React.Component {
               Agenda 2/2
             </Heading>
             <List>
+              <Appear><ListItem>Data management in React with <Link href="http://redux.js.org/">Redux</Link> and <Link href="https://mobxjs.github.io/mobx/">MobX</Link> including asynchronous behavior</ListItem></Appear>
               <Appear><ListItem>Routing with React</ListItem></Appear>
               <Appear><ListItem>Improving performance of a React application</ListItem></Appear>
               <Appear><ListItem>Testing React</ListItem></Appear>
               <Appear><ListItem>Structuring React applications</ListItem></Appear>
+            </List>
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="white">
+            <Heading size={2} textColor="primary">
+              JavaScript 000
+            </Heading>
+            <Image src={images.stepZero} margin="0px auto 40px" height="524px"/>
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <Heading caps fit size={1}>
+              ECMAScript
+            </Heading>
+            <List>
+              <Appear><ListItem>1995 - First version by Brendan Eich</ListItem></Appear>
+              <Appear><ListItem>ES5 - 2009</ListItem></Appear>
+              <Appear><ListItem>ES6/ES2015 - 20+ new features (modules and sugar)</ListItem></Appear>
+              <Appear><ListItem>ES7/ES2016 - <code>Array.prototype.includes</code>, <code>**</code></ListItem></Appear>
+              <Appear><ListItem>
+                <Link href="https://github.com/tc39/ecma262">Current proposals</Link>
+              </ListItem></Appear>
+            </List>
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <Heading caps fit size={1}>
+              Language Features
+            </Heading>
+            <List>
+              <Appear><ListItem>Loose typing. Example: functions are first class citizen</ListItem></Appear>
+              <Appear><ListItem>Prototypal inheritance - Classes are sugar on top of this</ListItem></Appear>
+              <Appear><ListItem>Core libraries such as <code>Date</code> and <code>Math</code> derived from Java 1.0</ListItem></Appear>
+              <Appear><ListItem>Strong functional programming capabilities (ES6 makes it sweeter)</ListItem></Appear>
+            </List>
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="black">
+            <BlockQuote>
+              <Quote>Java is to JavaScript as car is to carpet</Quote>
+            </BlockQuote>
+          </Slide>
+
+          <Slide transition={slideTransition} bgImage={images.cowboy} bgDarken={0.75} bgColor="black">
+            <BlockQuote>
+              <Quote>{"Array(16).join('hero' - 1) + 'Batman';"}</Quote>
+            </BlockQuote>
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary" bgImage={images.lint} bgDarken={0.85}>
+            <Heading caps>ESLint</Heading>
+            <Heading caps size={2} textColor="primary">Pluggable linting for JavaScript</Heading>
+          </Slide>
+
+          <Slide transition={slideTransition} bgImage={images.npmShape} bgDarken={0.75}>
+            <Heading size={2} textColor="primary" margin="0px auto 40px">
+              npm
+            </Heading>
+            <Link textColor="tertiary" href="https://anvaka.github.io/allnpmviz3d/">allnpmviz3d by @anvaka</Link>
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <Link href="http://www.webpackbin.com/">
+              <Heading size={1} textColor="tertiary">
+                <Link href="http://www.webpackbin.com/">WebpackBin</Link>
+              </Heading>
+            </Link>
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Heading size={1}>
+              Exercises
+            </Heading>
+            <List>
+              <Appear><ListItem>Head to <Link href="http://www.webpackbin.com/">WebpackBin</Link> and create a new JavaScript file (set "is entry")</ListItem></Appear>
+              <Appear><ListItem><code>console.log</code> something. You can also try <code>bin.log</code></ListItem></Appear>
+              <Appear><ListItem>Develop an <code>add</code> function that accepts two parameters and calculates them together.</ListItem></Appear>
+              <Appear><ListItem>*Create a bound version (<code>addTwo</code>) of <code>add</code>. Look up <Link href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind">MDN documentation</Link> to learn more.</ListItem></Appear>
+              <Appear><ListItem>**Try out <Link href="http://es6katas.org/">ES6 Katas</Link></ListItem></Appear>
             </List>
           </Slide>
 
@@ -163,20 +243,12 @@ export default class Presentation extends React.Component {
             </Link>
           </Slide>
 
-          <Slide transition={slideTransition} bgColor="primary">
-            <Link href="http://www.webpackbin.com/">
-              <Heading size={1} textColor="tertiary">
-                <Link href="http://www.webpackbin.com/">WebpackBin</Link>
-              </Heading>
-            </Link>
-          </Slide>
-
           <Slide transition={slideTransition}>
             <Heading size={1}>
               Exercises
             </Heading>
             <List>
-              <Appear><ListItem>Head to <Link href="http://www.webpackbin.com/">WebpackBin</Link> and create a new React project (<b>Boilerplates</b> menu)</ListItem></Appear>
+              <Appear><ListItem>Create a new React project (<b>Boilerplates</b> menu) at WebpackBin</ListItem></Appear>
               <Appear><ListItem>Familiarize yourself with the UI and develop your first "hello world!" application with React</ListItem></Appear>
               <Appear><ListItem>Save the result and link to it at <Link href="https://gitter.im/survivejs/training">gitter</Link> (we'll need this later)</ListItem></Appear>
               <Appear><ListItem>*Examine generated code through Babel repl. Can you see what happens to JSX?</ListItem></Appear>
