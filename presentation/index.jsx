@@ -143,6 +143,75 @@ export default class Presentation extends React.Component {
             </BlockQuote>
           </Slide>
 
+          <Slide transition={slideTransition} bgColor="primary">
+            <Heading caps fit size={1}>
+              Data Structures
+            </Heading>
+            <List>
+              <Appear><ListItem>ES5 - <code>Object</code>, <code>Array</code>, <code>String</code>, <code>Number</code>, <code>Boolean</code>, <code>null</code>, and <code>undefined</code></ListItem></Appear>
+              <Appear><ListItem>ES6 - <code>Set</code>, <code>Map</code>, <code>WeakSet</code>, and <code>Symbol</code></ListItem></Appear>
+              <Appear><ListItem><Link href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Typed_arrays">Typed arrays for browser binary data</Link></ListItem></Appear>
+              <Appear><ListItem><code>undefined</code> - Absence of value</ListItem></Appear>
+              <Appear><ListItem><code>null</code> - Value known to exist which exact value unknown</ListItem></Appear>
+              <Appear><ListItem>You can mimic other structures, such as queues, using the existing ones</ListItem></Appear>
+            </List>
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <Heading size={4}>
+              Queue
+            </Heading>
+            <CodePane
+              lang="js"
+              source={require("raw!../examples/queue.js")}
+              margin="20px auto"
+            />
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <Heading size={4}>
+              Naïve Generator
+            </Heading>
+            <CodePane
+              lang="js"
+              source={require("raw!../examples/generator.js")}
+              margin="20px auto"
+            />
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <Heading size={4}>
+              Power Generator
+            </Heading>
+            <CodePane
+              lang="js"
+              source={require("raw!../examples/power_generator.js")}
+              margin="20px auto"
+            />
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <Heading size={4}>
+              Hoisting
+            </Heading>
+            <CodePane
+              lang="js"
+              source={require("raw!../examples/hoisting.js")}
+              margin="20px auto"
+            />
+          </Slide>
+
+          <Slide transition={slideTransition} bgColor="primary">
+            <Heading size={4}>
+              <code>this</code>
+            </Heading>
+            <CodePane
+              lang="js"
+              source={require("raw!../examples/this.js")}
+              margin="20px auto"
+            />
+          </Slide>
+
           <Slide transition={slideTransition} bgImage={images.cowboy} bgDarken={0.75} bgColor="black">
             <BlockQuote>
               <Quote>{"Array(16).join('hero' - 1) + 'Batman';"}</Quote>
