@@ -53,14 +53,14 @@ export default class Presentation extends React.Component {
   render() {
     return (
       <Spectacle theme={theme}>
-        <Deck transition={slideTransition} transitionDuration={500} progress="bar">
+        <Deck transition={slideTransition} transitionDuration={500} progress="number">
           <Slide transition={slideTransition} bgColor="white">
             <Heading size={1} textColor="primary">
               SurviveJS React Training
             </Heading>
             <Image src={images.stepZero} margin="0px auto 40px" height="324px"/>
             <Heading size={4} textColor="primary">
-              Hit space to begin
+              <code>Space</code> to begin (&larr; and &rarr; too)
             </Heading>
           </Slide>
 
