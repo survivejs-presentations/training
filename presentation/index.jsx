@@ -1,5 +1,6 @@
 // Import React
 import React from "react";
+import TweetEmbed from "react-tweet-embed";
 
 // Import Spectacle Core tags
 import {
@@ -664,6 +665,10 @@ export default class Presentation extends React.Component {
               <Appear><ListItem>Extend through middleware and solutions around Redux</ListItem></Appear>
               <Appear><ListItem>Strong ecosystem</ListItem></Appear>
             </List>
+          </Slide>
+
+          <Slide transition={slideTransition} className="redux-flow">
+            <TweetEmbed id='727821044308967425' />
           </Slide>
 
           <Slide transition={slideTransition} bgColor="primary">
