@@ -246,7 +246,7 @@ export default class Presentation extends React.Component {
             <List>
               <Appear><ListItem>Head to <Link href="http://www.webpackbin.com/">WebpackBin</Link> and create a new JavaScript file (set "is entry")</ListItem></Appear>
               <Appear><ListItem><code>console.log</code> something. You can also try <code>bin.log</code></ListItem></Appear>
-              <Appear><ListItem>Develop an <code>add</code> function that accepts two parameters and calculates them together.</ListItem></Appear>
+              <Appear><ListItem>Develop an <code>add</code> function that accepts two parameters and adds them together.</ListItem></Appear>
               <Appear><ListItem>*Create a bound version (<code>addTwo</code>) of <code>add</code>. Look up <Link href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Function/bind">MDN documentation</Link> to learn more.</ListItem></Appear>
               <Appear><ListItem>**Try out <Link href="http://es6katas.org/">ES6 Katas</Link></ListItem></Appear>
             </List>
