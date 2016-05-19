@@ -12,11 +12,10 @@ function queue(len) {
   return ret;
 }
 
-var a = queue(3);
+var a = queue(2);
 
 a.push('cat');
 a.push('dog');
 a.push('chimp');
-a.push('giraffe');
 
-console.log(a); // should contain dog, chimp, giraffe now
+console.log(a); // should contain dog, chimp now

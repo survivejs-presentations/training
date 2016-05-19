@@ -2,6 +2,10 @@ a {
   color: #9FE9FF;
 }
 
+code {
+  font-size: 120%;
+}
+
 button svg {
   fill: rgba(255, 219, 169, 0.43) !important;
 }
