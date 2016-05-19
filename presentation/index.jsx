@@ -338,6 +338,13 @@ export default class Presentation extends React.Component {
             </Link>
           </Slide>
 
+          <Slide transition={slideTransition} bgColor="primary">
+            <Heading size={2}>
+              Virtual DOM
+            </Heading>
+            <Image src={images.vdom} margin="40px auto" height="324px" />
+          </Slide>
+
           <Slide transition={slideTransition}>
             <Heading size={1}>
               <Link href="https://facebook.github.io/react/">React</Link> Philosophy
@@ -349,13 +356,6 @@ export default class Presentation extends React.Component {
               <Appear><ListItem>React forces you to think about <code>state</code> (good thing)</ListItem></Appear>
               <Appear><ListItem>Implements Virtual DOM</ListItem></Appear>
             </List>
-          </Slide>
-
-          <Slide transition={slideTransition} bgColor="primary">
-            <Heading size={2}>
-              Virtual DOM
-            </Heading>
-            <Image src={images.vdom} margin="40px auto" height="324px" />
           </Slide>
 
           <Slide transition={slideTransition}>
