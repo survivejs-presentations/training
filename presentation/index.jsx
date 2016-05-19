@@ -354,7 +354,6 @@ export default class Presentation extends React.Component {
               <Appear><ListItem>Each component can have <code>props</code> and <code>state</code></ListItem></Appear>
               <Appear><ListItem>Escape hatches through <code>lifecycle methods</code> and <code>refs</code></ListItem></Appear>
               <Appear><ListItem>React forces you to think about <code>state</code> (good thing)</ListItem></Appear>
-              <Appear><ListItem>Implements Virtual DOM</ListItem></Appear>
             </List>
           </Slide>
 
@@ -394,8 +393,8 @@ export default class Presentation extends React.Component {
             <List>
               <Appear><ListItem>Copy the cat counter example to <Link href="http://www.webpackbin.com/">WebpackBin</Link></ListItem></Appear>
               <Appear><ListItem>Make it possible to add two cats at once</ListItem></Appear>
-              <Appear><ListItem>*Add multiple options. Hint: <code>[1, 2, 4].map(...)</code>. Look up React's <Link href="https://facebook.github.io/react/docs/reconciliation.html"><code>key</code></Link>. Why is it needed?</ListItem></Appear>
-              <Appear><ListItem>**Add a reset button to restore the count to zero</ListItem></Appear>
+              <Appear><ListItem>*Add a reset button to restore the count to zero</ListItem></Appear>
+              <Appear><ListItem>**Add multiple options. Hint: <code>[1, 2, 4].map(...)</code>. Look up React's <Link href="https://facebook.github.io/react/docs/reconciliation.html"><code>key</code></Link>. Why is it needed?</ListItem></Appear>
             </List>
           </Slide>
 
@@ -808,6 +807,12 @@ export default class Presentation extends React.Component {
             <Image src={images.stepSix} margin="0px auto 40px" height="524px"/>
           </Slide>
 
+          <Slide transition={slideTransition}>
+            <Heading size={2}>
+              redux-thunk
+            </Heading>
+          </Slide>
+
           <Slide transition={slideTransition} bgColor="primary">
             <Heading size={4}>
               Async with <Link href="https://www.npmjs.com/package/redux-thunk">redux-thunk</Link> 1/2
@@ -842,6 +847,12 @@ export default class Presentation extends React.Component {
             </List>
           </Slide>
 
+          <Slide transition={slideTransition}>
+            <Heading size={2}>
+              redux-saga
+            </Heading>
+          </Slide>
+
           <Slide transition={slideTransition} bgColor="primary">
             <Heading size={4}>
               <Link href="https://www.npmjs.com/package/redux-saga">redux-saga</Link> 1/2
@@ -874,6 +885,12 @@ export default class Presentation extends React.Component {
               <Appear><ListItem>Your browser might need a polyfill for generators to work</ListItem></Appear>
               <Appear><ListItem>Easier to test due to the looser coupling by default</ListItem></Appear>
             </List>
+          </Slide>
+
+          <Slide transition={slideTransition}>
+            <Heading size={2}>
+              Async in MobX
+            </Heading>
           </Slide>
 
           <Slide transition={slideTransition} bgColor="primary">
