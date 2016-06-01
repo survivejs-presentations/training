@@ -1,12 +1,12 @@
 function queue(len) {
   var ret = [];
 
-  ret.push = function(a) {
+  ret.push = function(arr) {
     if(ret.length == len) {
       ret.shift();
     }
 
-    return Array.prototype.push.apply(this, arguments);
+    return Array.prototype.push.call(this, arr);
   };
 
   return ret;
