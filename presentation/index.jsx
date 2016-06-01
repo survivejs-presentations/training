@@ -571,7 +571,6 @@ export default class Presentation extends React.Component {
               <Appear><ListItem>Gradual typing through static analysis</ListItem></Appear>
               <Appear><ListItem>Might replace <code>propTypes</code> over longer term</ListItem></Appear>
               <Appear><ListItem>Runtime checks with <Link href="https://www.npmjs.com/package/babel-plugin-typecheck">babel-plugin-typecheck</Link></ListItem></Appear>
-              <Appear><ListItem>No support for function style components yet <Link href="https://github.com/facebook/flow/issues/1081">#1081</Link></ListItem></Appear>
             </List>
           </Slide>
 
